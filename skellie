@@ -1,0 +1,51 @@
+#!/bin/sh
+
+dir="`dirname "$0"`"
+
+divider() {
+	echo ""
+	echo "*********************"
+	echo ""
+}
+
+goodbye() {
+	divider
+	echo "All done. Goodbye!"
+	divider
+}
+
+install_dev_tools() {
+	echo "Installing Dev Tools"
+
+	echo "Installing Bower..."
+	bower init
+	bower install html5shiv --save
+
+	echo "Initializing npm..."
+	npm init
+
+	echo "Installing Gulp..."
+	npm install gulp gulp-sass --save-dev
+
+	echo "All installed!"
+
+}
+
+function menu() {
+	divider
+	echo "SKELLIE MAIN MENU"
+	divider
+	echo "What would you like to do?"
+	echo "[1] install dev tools"
+	echo "[2] exit"
+	while true; do
+		read choice
+		case $choice in
+			1) install_dev_tools; break;;
+			2) echo "Later bro."; goodbye; exit;;
+			*) echo "WRONG. Please follow the instructions, bozo";;
+		esac
+	done
+}
+
+menu
