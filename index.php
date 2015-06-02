@@ -4,9 +4,12 @@
 
 <section class="main-section main-section-hero">
 	<div class="overlay"></div>
-	
 	<div class="container">
+
 		<div class="hero-prod-info">
+
+			<div class="hero-prod-image" style="background-image:url(/img/main-prod-image.png);"></div>
+
 			<div class="hero-headline">
 				<h1>A Naturally Effective Way to Protect from Insects</h1>
 				<div class="hero-text">
@@ -18,11 +21,13 @@
 					<p>Available in Spray or Towelettes for Easy Application</p>
 				</div>
 			</div>
-			<div class="hero-prod-image" style="background-image:url(/img/main-prod-image.png);"></div>
+
+			
+
 			<div class="hero-bottom-banner">
 				<div class="hero-ctas">
-					<a href="" class="button teal-button">Shop Now</a>
-					<a href="" class="button green-button">Find a Store</a>
+					<a href="" class="button teal-button shop-now">Shop Now</a>
+					<a href="" class="button green-button find-a-store">Find a Store</a>
 				</div>
 
 				<div class="hero-prod-details">
@@ -43,10 +48,16 @@
 					$text = $item['text'];
 				?>
 					<div class="hero-prod-detail">
-						<span class="bracket"></span>
-						<div class="hero-prod-detail-icon" style="background-image:url(<?php echo $icon ?>);"></div>
-						<span class="bracket"></span>
-						<?php echo $text ?>
+						<div class="hero-prod-detail-image-container">
+							<span class="bracket"></span>
+							<div class="hero-prod-detail-icon" style="background-image:url(<?php echo $icon ?>);"></div>
+							<span class="bracket"></span>
+						</div>
+						<div class="hero-prod-detail-text">
+							<span class="arrow"></span>
+							<p><?php echo $text ?></p>
+						</div>
+						
 					</div>
 				<?php endforeach ?>
 			</div>
