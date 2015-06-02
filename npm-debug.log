@@ -1,0 +1,398 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'gulp',
+1 verbose cli   'gulp-ruby-sass',
+1 verbose cli   'gulp-notify',
+1 verbose cli   'gulp-bwer',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 warn package.json @ No description
+5 warn package.json @ No repository field.
+6 warn package.json @ No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'gulp', null ]
+9 verbose cache add name=undefined spec="gulp" args=["gulp",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'gulp',
+10 verbose parsed url   path: 'gulp',
+10 verbose parsed url   href: 'gulp' }
+11 verbose cache add [ 'gulp-ruby-sass', null ]
+12 verbose cache add name=undefined spec="gulp-ruby-sass" args=["gulp-ruby-sass",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'gulp-ruby-sass',
+13 verbose parsed url   path: 'gulp-ruby-sass',
+13 verbose parsed url   href: 'gulp-ruby-sass' }
+14 verbose cache add [ 'gulp-notify', null ]
+15 verbose cache add name=undefined spec="gulp-notify" args=["gulp-notify",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'gulp-notify',
+16 verbose parsed url   path: 'gulp-notify',
+16 verbose parsed url   href: 'gulp-notify' }
+17 verbose cache add [ 'gulp-bwer', null ]
+18 verbose cache add name=undefined spec="gulp-bwer" args=["gulp-bwer",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'gulp-bwer',
+19 verbose parsed url   path: 'gulp-bwer',
+19 verbose parsed url   href: 'gulp-bwer' }
+20 silly lockFile 9750c68d-gulp gulp
+21 verbose lock gulp /Users/piperblack/.npm/9750c68d-gulp.lock
+22 silly lockFile a832ec05-gulp-ruby-sass gulp-ruby-sass
+23 verbose lock gulp-ruby-sass /Users/piperblack/.npm/a832ec05-gulp-ruby-sass.lock
+24 silly lockFile 6a726d29-gulp-notify gulp-notify
+25 verbose lock gulp-notify /Users/piperblack/.npm/6a726d29-gulp-notify.lock
+26 silly lockFile 40f79308-gulp-bwer gulp-bwer
+27 verbose lock gulp-bwer /Users/piperblack/.npm/40f79308-gulp-bwer.lock
+28 silly lockFile 9750c68d-gulp gulp
+29 silly lockFile 9750c68d-gulp gulp
+30 silly lockFile 6a726d29-gulp-notify gulp-notify
+31 silly lockFile 6a726d29-gulp-notify gulp-notify
+32 verbose addNamed [ 'gulp', '' ]
+33 verbose addNamed [ null, '*' ]
+34 silly lockFile 72f4391e-gulp gulp@
+35 verbose lock gulp@ /Users/piperblack/.npm/72f4391e-gulp.lock
+36 silly lockFile a832ec05-gulp-ruby-sass gulp-ruby-sass
+37 silly lockFile a832ec05-gulp-ruby-sass gulp-ruby-sass
+38 verbose addNamed [ 'gulp-notify', '' ]
+39 verbose addNamed [ null, '*' ]
+40 silly lockFile 6b689132-gulp-notify gulp-notify@
+41 verbose lock gulp-notify@ /Users/piperblack/.npm/6b689132-gulp-notify.lock
+42 silly lockFile 40f79308-gulp-bwer gulp-bwer
+43 silly lockFile 40f79308-gulp-bwer gulp-bwer
+44 verbose addNamed [ 'gulp-ruby-sass', '' ]
+45 verbose addNamed [ null, '*' ]
+46 silly lockFile c308c9d4-gulp-ruby-sass gulp-ruby-sass@
+47 verbose lock gulp-ruby-sass@ /Users/piperblack/.npm/c308c9d4-gulp-ruby-sass.lock
+48 silly addNameRange { name: 'gulp', range: '*', hasData: false }
+49 verbose addNamed [ 'gulp-bwer', '' ]
+50 verbose addNamed [ null, '*' ]
+51 silly lockFile 00ebda60-gulp-bwer gulp-bwer@
+52 verbose lock gulp-bwer@ /Users/piperblack/.npm/00ebda60-gulp-bwer.lock
+53 silly addNameRange { name: 'gulp-notify', range: '*', hasData: false }
+54 silly addNameRange { name: 'gulp-ruby-sass', range: '*', hasData: false }
+55 silly addNameRange { name: 'gulp-bwer', range: '*', hasData: false }
+56 verbose request where is /gulp-bwer
+57 verbose request registry https://registry.npmjs.org/
+58 verbose request id 37f73edff1a7ad0c
+59 verbose url raw /gulp-bwer
+60 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-bwer' ]
+61 verbose url resolved https://registry.npmjs.org/gulp-bwer
+62 verbose request where is https://registry.npmjs.org/gulp-bwer
+63 info trying registry request attempt 1 at 10:27:23
+64 http GET https://registry.npmjs.org/gulp-bwer
+65 verbose request where is /gulp
+66 verbose request registry https://registry.npmjs.org/
+67 verbose url raw /gulp
+68 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+69 verbose url resolved https://registry.npmjs.org/gulp
+70 verbose request where is https://registry.npmjs.org/gulp
+71 info trying registry request attempt 1 at 10:27:23
+72 verbose etag "3B5XJMVNFIGEVZLYQRXCCV385"
+73 http GET https://registry.npmjs.org/gulp
+74 verbose request where is /gulp-ruby-sass
+75 verbose request registry https://registry.npmjs.org/
+76 verbose url raw /gulp-ruby-sass
+77 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-ruby-sass' ]
+78 verbose url resolved https://registry.npmjs.org/gulp-ruby-sass
+79 verbose request where is https://registry.npmjs.org/gulp-ruby-sass
+80 info trying registry request attempt 1 at 10:27:23
+81 verbose etag "2IGKJ2WQCNRCJLM4OIAT23P1E"
+82 http GET https://registry.npmjs.org/gulp-ruby-sass
+83 verbose request where is /gulp-notify
+84 verbose request registry https://registry.npmjs.org/
+85 verbose url raw /gulp-notify
+86 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-notify' ]
+87 verbose url resolved https://registry.npmjs.org/gulp-notify
+88 verbose request where is https://registry.npmjs.org/gulp-notify
+89 info trying registry request attempt 1 at 10:27:23
+90 verbose etag "24XKWPJPI596NEMPY70791WVH"
+91 http GET https://registry.npmjs.org/gulp-notify
+92 http 200 https://registry.npmjs.org/gulp-notify
+93 silly registry.get cb [ 200,
+93 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+93 silly registry.get     etag: '"AGEFCNXLK87K5CZ5DFR4I2FXB"',
+93 silly registry.get     'content-type': 'application/json',
+93 silly registry.get     'cache-control': 'max-age=60',
+93 silly registry.get     'content-length': '74432',
+93 silly registry.get     'accept-ranges': 'bytes',
+93 silly registry.get     date: 'Mon, 01 Jun 2015 17:27:13 GMT',
+93 silly registry.get     via: '1.1 varnish',
+93 silly registry.get     age: '47',
+93 silly registry.get     connection: 'keep-alive',
+93 silly registry.get     'x-served-by': 'cache-lax1435-LAX',
+93 silly registry.get     'x-cache': 'HIT',
+93 silly registry.get     'x-cache-hits': '1',
+93 silly registry.get     'x-timer': 'S1433179633.100079,VS0,VE0',
+93 silly registry.get     vary: 'Accept' } ]
+94 silly addNameRange number 2 { name: 'gulp-notify', range: '*', hasData: true }
+95 silly addNameRange versions [ 'gulp-notify',
+95 silly addNameRange   [ '0.0.5',
+95 silly addNameRange     '0.0.6',
+95 silly addNameRange     '0.0.7',
+95 silly addNameRange     '0.0.8',
+95 silly addNameRange     '0.1.0',
+95 silly addNameRange     '0.2.0',
+95 silly addNameRange     '0.3.0',
+95 silly addNameRange     '0.3.2',
+95 silly addNameRange     '0.3.3',
+95 silly addNameRange     '0.3.4',
+95 silly addNameRange     '0.3.4-1',
+95 silly addNameRange     '0.3.4-2',
+95 silly addNameRange     '0.3.5-0',
+95 silly addNameRange     '0.4.0',
+95 silly addNameRange     '0.4.1',
+95 silly addNameRange     '0.4.2',
+95 silly addNameRange     '0.4.3',
+95 silly addNameRange     '0.4.5',
+95 silly addNameRange     '0.4.6',
+95 silly addNameRange     '0.5.0',
+95 silly addNameRange     '0.5.1',
+95 silly addNameRange     '0.6.0',
+95 silly addNameRange     '0.6.1',
+95 silly addNameRange     '0.6.2',
+95 silly addNameRange     '1.0.0-beta',
+95 silly addNameRange     '1.1.0',
+95 silly addNameRange     '1.1.1',
+95 silly addNameRange     '1.2.0',
+95 silly addNameRange     '1.2.1',
+95 silly addNameRange     '1.2.2',
+95 silly addNameRange     '1.2.4',
+95 silly addNameRange     '1.2.5',
+95 silly addNameRange     '1.2.6',
+95 silly addNameRange     '1.3.0',
+95 silly addNameRange     '1.3.1',
+95 silly addNameRange     '1.4.0',
+95 silly addNameRange     '1.4.1',
+95 silly addNameRange     '1.4.2',
+95 silly addNameRange     '1.5.0',
+95 silly addNameRange     '1.5.1',
+95 silly addNameRange     '1.6.0',
+95 silly addNameRange     '1.7.0',
+95 silly addNameRange     '1.7.1',
+95 silly addNameRange     '1.8.0',
+95 silly addNameRange     '2.0.0',
+95 silly addNameRange     '2.0.1',
+95 silly addNameRange     '2.1.0',
+95 silly addNameRange     '2.2.0' ] ]
+96 verbose addNamed [ 'gulp-notify', '2.2.0' ]
+97 verbose addNamed [ '2.2.0', '2.2.0' ]
+98 silly lockFile 7dcdb195-gulp-notify-2-2-0 gulp-notify@2.2.0
+99 verbose lock gulp-notify@2.2.0 /Users/piperblack/.npm/7dcdb195-gulp-notify-2-2-0.lock
+100 silly lockFile 7dcdb195-gulp-notify-2-2-0 gulp-notify@2.2.0
+101 silly lockFile 7dcdb195-gulp-notify-2-2-0 gulp-notify@2.2.0
+102 silly lockFile 6b689132-gulp-notify gulp-notify@
+103 silly lockFile 6b689132-gulp-notify gulp-notify@
+104 http 404 https://registry.npmjs.org/gulp-bwer
+105 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+105 verbose headers   'content-type': 'application/json',
+105 verbose headers   'cache-control': 'max-age=0',
+105 verbose headers   'content-length': '51',
+105 verbose headers   'accept-ranges': 'bytes',
+105 verbose headers   date: 'Mon, 01 Jun 2015 17:27:13 GMT',
+105 verbose headers   via: '1.1 varnish',
+105 verbose headers   age: '0',
+105 verbose headers   connection: 'keep-alive',
+105 verbose headers   'x-served-by': 'cache-lax1428-LAX',
+105 verbose headers   'x-cache': 'MISS',
+105 verbose headers   'x-cache-hits': '0',
+105 verbose headers   'x-timer': 'S1433179633.114015,VS0,VE84' }
+106 silly registry.get cb [ 404,
+106 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+106 silly registry.get     'content-type': 'application/json',
+106 silly registry.get     'cache-control': 'max-age=0',
+106 silly registry.get     'content-length': '51',
+106 silly registry.get     'accept-ranges': 'bytes',
+106 silly registry.get     date: 'Mon, 01 Jun 2015 17:27:13 GMT',
+106 silly registry.get     via: '1.1 varnish',
+106 silly registry.get     age: '0',
+106 silly registry.get     connection: 'keep-alive',
+106 silly registry.get     'x-served-by': 'cache-lax1428-LAX',
+106 silly registry.get     'x-cache': 'MISS',
+106 silly registry.get     'x-cache-hits': '0',
+106 silly registry.get     'x-timer': 'S1433179633.114015,VS0,VE84' } ]
+107 silly lockFile 00ebda60-gulp-bwer gulp-bwer@
+108 silly lockFile 00ebda60-gulp-bwer gulp-bwer@
+109 http 200 https://registry.npmjs.org/gulp-ruby-sass
+110 silly registry.get cb [ 200,
+110 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+110 silly registry.get     etag: '"EGUMYGE66OHPN5CYR1ZHR7G5D"',
+110 silly registry.get     'content-type': 'application/json',
+110 silly registry.get     'cache-control': 'max-age=60',
+110 silly registry.get     'content-length': '34727',
+110 silly registry.get     'accept-ranges': 'bytes',
+110 silly registry.get     date: 'Mon, 01 Jun 2015 17:27:13 GMT',
+110 silly registry.get     via: '1.1 varnish',
+110 silly registry.get     age: '0',
+110 silly registry.get     connection: 'keep-alive',
+110 silly registry.get     'x-served-by': 'cache-lax1427-LAX',
+110 silly registry.get     'x-cache': 'HIT',
+110 silly registry.get     'x-cache-hits': '1',
+110 silly registry.get     'x-timer': 'S1433179633.108056,VS0,VE46',
+110 silly registry.get     vary: 'Accept' } ]
+111 silly addNameRange number 2 { name: 'gulp-ruby-sass', range: '*', hasData: true }
+112 silly addNameRange versions [ 'gulp-ruby-sass',
+112 silly addNameRange   [ '0.1.0',
+112 silly addNameRange     '0.1.1',
+112 silly addNameRange     '0.1.2',
+112 silly addNameRange     '0.2.0',
+112 silly addNameRange     '0.3.0',
+112 silly addNameRange     '0.3.1',
+112 silly addNameRange     '0.4.0',
+112 silly addNameRange     '0.4.1',
+112 silly addNameRange     '0.4.2',
+112 silly addNameRange     '0.4.3',
+112 silly addNameRange     '0.5.0',
+112 silly addNameRange     '0.6.0',
+112 silly addNameRange     '0.7.0',
+112 silly addNameRange     '0.7.1',
+112 silly addNameRange     '1.0.0-alpha',
+112 silly addNameRange     '1.0.0-alpha.2',
+112 silly addNameRange     '1.0.0-alpha.3',
+112 silly addNameRange     '1.0.0',
+112 silly addNameRange     '1.0.1',
+112 silly addNameRange     '1.0.2',
+112 silly addNameRange     '1.0.5' ] ]
+113 verbose addNamed [ 'gulp-ruby-sass', '1.0.5' ]
+114 verbose addNamed [ '1.0.5', '1.0.5' ]
+115 silly lockFile 57d37868-gulp-ruby-sass-1-0-5 gulp-ruby-sass@1.0.5
+116 verbose lock gulp-ruby-sass@1.0.5 /Users/piperblack/.npm/57d37868-gulp-ruby-sass-1-0-5.lock
+117 silly lockFile 57d37868-gulp-ruby-sass-1-0-5 gulp-ruby-sass@1.0.5
+118 silly lockFile 57d37868-gulp-ruby-sass-1-0-5 gulp-ruby-sass@1.0.5
+119 silly lockFile c308c9d4-gulp-ruby-sass gulp-ruby-sass@
+120 silly lockFile c308c9d4-gulp-ruby-sass gulp-ruby-sass@
+121 http 200 https://registry.npmjs.org/gulp
+122 silly registry.get cb [ 200,
+122 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+122 silly registry.get     etag: '"53DUJP2F7FK7FDHA496C3U8DO"',
+122 silly registry.get     'content-type': 'application/json',
+122 silly registry.get     'cache-control': 'max-age=60',
+122 silly registry.get     'content-length': '102019',
+122 silly registry.get     'accept-ranges': 'bytes',
+122 silly registry.get     date: 'Mon, 01 Jun 2015 17:27:13 GMT',
+122 silly registry.get     via: '1.1 varnish',
+122 silly registry.get     age: '43',
+122 silly registry.get     connection: 'keep-alive',
+122 silly registry.get     'x-served-by': 'cache-lax1428-LAX',
+122 silly registry.get     'x-cache': 'HIT',
+122 silly registry.get     'x-cache-hits': '1',
+122 silly registry.get     'x-timer': 'S1433179633.108417,VS0,VE1',
+122 silly registry.get     vary: 'Accept' } ]
+123 silly addNameRange number 2 { name: 'gulp', range: '*', hasData: true }
+124 silly addNameRange versions [ 'gulp',
+124 silly addNameRange   [ '0.0.1',
+124 silly addNameRange     '0.0.2',
+124 silly addNameRange     '0.0.3',
+124 silly addNameRange     '0.0.4',
+124 silly addNameRange     '0.0.5',
+124 silly addNameRange     '0.0.7',
+124 silly addNameRange     '0.0.8',
+124 silly addNameRange     '0.0.9',
+124 silly addNameRange     '0.1.0',
+124 silly addNameRange     '0.2.0',
+124 silly addNameRange     '1.0.0',
+124 silly addNameRange     '1.1.0',
+124 silly addNameRange     '1.2.0',
+124 silly addNameRange     '1.2.1',
+124 silly addNameRange     '2.0.0',
+124 silly addNameRange     '2.0.1',
+124 silly addNameRange     '2.1.0',
+124 silly addNameRange     '2.2.0',
+124 silly addNameRange     '2.3.0',
+124 silly addNameRange     '2.4.0',
+124 silly addNameRange     '2.4.1',
+124 silly addNameRange     '2.6.0',
+124 silly addNameRange     '2.6.1',
+124 silly addNameRange     '2.7.0',
+124 silly addNameRange     '3.0.0',
+124 silly addNameRange     '3.1.1',
+124 silly addNameRange     '3.1.2',
+124 silly addNameRange     '3.1.3',
+124 silly addNameRange     '3.1.4',
+124 silly addNameRange     '3.2.0',
+124 silly addNameRange     '3.2.1',
+124 silly addNameRange     '3.2.2',
+124 silly addNameRange     '3.2.3',
+124 silly addNameRange     '3.2.4',
+124 silly addNameRange     '3.2.5',
+124 silly addNameRange     '3.3.0',
+124 silly addNameRange     '3.3.1',
+124 silly addNameRange     '3.3.2',
+124 silly addNameRange     '3.3.4',
+124 silly addNameRange     '3.4.0',
+124 silly addNameRange     '3.5.0',
+124 silly addNameRange     '3.5.1',
+124 silly addNameRange     '3.5.2',
+124 silly addNameRange     '3.5.5',
+124 silly addNameRange     '3.5.6',
+124 silly addNameRange     '3.6.0',
+124 silly addNameRange     '3.6.1',
+124 silly addNameRange     '3.6.2',
+124 silly addNameRange     '3.7.0',
+124 silly addNameRange     '3.8.0',
+124 silly addNameRange     '3.8.1',
+124 silly addNameRange     '3.8.2',
+124 silly addNameRange     '3.8.3',
+124 silly addNameRange     '3.8.4',
+124 silly addNameRange     '3.8.5',
+124 silly addNameRange     '3.8.6',
+124 silly addNameRange     '3.8.7',
+124 silly addNameRange     '3.8.8',
+124 silly addNameRange     '3.8.9',
+124 silly addNameRange     '3.8.10',
+124 silly addNameRange     '3.8.11' ] ]
+125 verbose addNamed [ 'gulp', '3.8.11' ]
+126 verbose addNamed [ '3.8.11', '3.8.11' ]
+127 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+128 verbose lock gulp@3.8.11 /Users/piperblack/.npm/3d31ec08-gulp-3-8-11.lock
+129 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+130 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+131 silly lockFile 72f4391e-gulp gulp@
+132 silly lockFile 72f4391e-gulp gulp@
+133 error 404 404 Not Found: gulp-bwer
+133 error 404
+133 error 404 'gulp-bwer' is not in the npm registry.
+133 error 404 You should bug the author to publish it
+133 error 404
+133 error 404 Note that you can also install from a
+133 error 404 tarball, folder, or http url, or git url.
+134 error System Darwin 14.3.0
+135 error command "node" "/usr/local/bin/npm" "install" "gulp" "gulp-ruby-sass" "gulp-notify" "gulp-bwer" "--save-dev"
+136 error cwd /Users/piperblack/Desktop/Wonderful/BuzzAway/site
+137 error node -v v0.10.35
+138 error npm -v 1.4.28
+139 error code E404
+140 verbose exit [ 1, true ]
