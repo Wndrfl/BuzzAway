@@ -14,7 +14,8 @@ a {
   text-decoration: none; }
   a:hover, a:focus, a:active {
     text-decoration: none !important;
-    border: none; }
+    border: none;
+    color: inherit; }
 
 p {
   font-size: 1.3em; }
@@ -158,7 +159,7 @@ p {
       @media (min-width: 768px) {
         .main-section-hero .hero-prod-info .hero-prod-image {
           display: inline-block;
-          height: 600px;
+          height: 536px;
           width: 420px;
           left: 0px;
           padding: 0px;
@@ -276,7 +277,7 @@ p {
         right: -160px; }
       .main-section-hero .hero-bottom-banner .hero-corner-cut .right-shape {
         background-color: #FAF7F2;
-        height: 210px;
+        height: 174px;
         width: 150px;
         right: -150px;
         bottom: 0px; }
@@ -289,27 +290,28 @@ p {
           position: absolute;
           top: -126px;
           width: 0; }
-      .main-section-hero .hero-bottom-banner .hero-corner-cut .lil-tri {
-        width: 0;
-        height: 0;
-        border-bottom: 24px solid #E2CFBB;
-        border-right: 24px solid transparent;
-        top: 126px;
-        right: -149px; }
       .main-section-hero .hero-bottom-banner .hero-corner-cut .lil-tri-bottom {
         width: 0;
         height: 0;
-        border-bottom: 24px solid #E2CFBB;
-        border-right: 24px solid transparent;
+        border-bottom: 22px solid #E2CFBB;
+        border-right: 26px solid transparent;
+        top: 104px;
+        right: -151px; }
+      .main-section-hero .hero-bottom-banner .hero-corner-cut .lil-tri {
+        width: 0;
+        height: 0;
+        border-bottom: 20px solid #E2CFBB;
+        border-right: 25px solid transparent;
         top: 0px;
         right: -24px; }
       .main-section-hero .hero-bottom-banner .hero-corner-cut .triangle {
         /*height:148px;
 				width: 148px;*/
-        border-top: 125px solid #00AA97;
+        border-top: 106px solid #00AA97;
         border-left: 125px solid transparent;
-        top: 24px;
-        right: -125px; }
+        top: 20px;
+        right: -125px;
+        z-index: 1; }
   .main-section-hero .hero-prod-detail-wrapper {
     padding: 15px;
     background-color: #FAF7F2;
@@ -337,11 +339,14 @@ p {
     .main-section-hero .hero-prod-detail-wrapper .hero-prod-detail {
       display: inline-block;
       position: relative; }
+      @media (min-width: 768px) {
+        .main-section-hero .hero-prod-detail-wrapper .hero-prod-detail {
+          height: 200px; } }
       .main-section-hero .hero-prod-detail-wrapper .hero-prod-detail .hero-prod-detail-image-container {
         position: relative; }
         .main-section-hero .hero-prod-detail-wrapper .hero-prod-detail .hero-prod-detail-image-container .bracket {
           height: 100%;
-          width: 30px;
+          width: 15px;
           color: #716967;
           position: absolute;
           top: 0px;
@@ -380,7 +385,12 @@ p {
             bottom: 0px;
             background-color: #00AA97;
             margin-top: 30px;
-            margin-bottom: 30px;
+            margin-bottom: 0px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            border-radius: 20px;
             -webkit-border-bottom-left-radius: 0px;
             -ms-border-bottom-left-radius: 0px;
             -o-border-bottom-left-radius: 0px;
@@ -407,7 +417,7 @@ p {
             .main-section-hero .hero-prod-detail-wrapper .hero-prod-detail .hero-prod-detail-text .arrow {
               display: none; } }
         .main-section-hero .hero-prod-detail-wrapper .hero-prod-detail .hero-prod-detail-text p {
-          font-size: 24px;
+          font-size: 16px;
           color: white;
           text-align: center; }
 
@@ -552,6 +562,18 @@ p {
       color: white; }
       .main-section-product .product-toggle-container .product-toggle.active .arrow {
         opacity: 1; }
+
+.main-section-product .product-wrapper {
+  opacity: 0;
+  display: none;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out; }
+  .main-section-product .product-wrapper.active {
+    opacity: 1;
+    display: block; }
 
 .main-section-product .product .product-image {
   display: block;

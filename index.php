@@ -40,8 +40,7 @@
 						<span class="lil-tri"></span>
 						<span class="triangle"></span>
 						<span class="lil-tri-bottom"></span>
-						<span class="about">About</span>
-						<span>^</span>
+						
 					</div>
 				</div>
 
@@ -101,9 +100,11 @@
 
 	<?php foreach($products as $product) :
 		$title  = $product['title'];
+		$class = $product['id'];
 		$main_image  = $product['main_image'];
 		$desc = $product['desc'];
 		?>
+		<div class="product-wrapper <?php echo $class ?>">
 			<div class="product">
 				<div class="container">
 					<div class="product-image" style="background-image:url(<?php echo $main_image ?>)"></div>
