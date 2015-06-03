@@ -27,15 +27,11 @@
 	border:5px solid $green;
 	text-align: center;
 	@include transition(opacity .4s ease-in-out);
+
 	&.active{
 		z-index: 5;
 		opacity: 1;
 	}
-	/*.wrapper{
-		position: absolute;
-		width: 100%;
-		@include center-center;
-	}*/
 	h3{
 		color:$teal;
 		font-size: 25px;
@@ -75,5 +71,10 @@
 }
 
 #find-a-store-modal{
+	
+	.find-a-store-right,
+	.find-a-store-left{
+		border:1px solid $grey;
+	}
 	
 }

@@ -741,12 +741,7 @@ p {
   -moz-transition: opacity 0.4s ease-in-out;
   -ms-transition: opacity 0.4s ease-in-out;
   -o-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
-  /*.wrapper{
-		position: absolute;
-		width: 100%;
-		@include center-center;
-	}*/ }
+  transition: opacity 0.4s ease-in-out; }
   .modal.active {
     z-index: 5;
     opacity: 1; }
@@ -772,3 +767,7 @@ p {
     background-position: center center; }
   .modal .button {
     margin-top: 30px; }
+
+#find-a-store-modal .find-a-store-right,
+#find-a-store-modal .find-a-store-left {
+  border: 1px solid #F1F1F1; }
