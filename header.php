@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div class="main-nav-slide-wrapper">
+<div class="modal-overlay"></div><!--end modal overlay-->
 
 	<header class="main-header">
 		<div class="container">
@@ -22,9 +22,9 @@
 			</div>
 			
 			<div class="main-header-right">
-				<a href="" class="button grey-button">About</a>
-				<a href="" class="button teal-button">Shop Now</a>
-				<a href="" class="button green-button">Find A Store</a>
+				<a href="#" class="button grey-button">About</a>
+				<a href="#" class="button teal-button shop-now">Shop Now</a>
+				<a href="#" class="button green-button find-a-store">Find A Store</a>
 			</div>
 
 		</div>

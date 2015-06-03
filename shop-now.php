@@ -18,17 +18,26 @@
 	);
 ?>
 
-<div>
-	<h3>Buy Buzz Away Extreme online at these, and many other fine online retailers</h3>
-	<span class="divider"></span>
-	<?php foreach ($retailers as $retailer) :
-		$name = $retailer['name'];
-		$logo = $retailer['logo'];
-		$link = $retailer['link']; ?>
-		
-		<div class="retailer">
-			<a href="<?php echo $link ?>" alt="<?php echo $name ?>" style="background-image:url(<?php echo $logo ?>);" target="_blank"></a>
-			<a href="<?php echo $link ?>" alt="<?php echo $name ?>" target="blank">Shop Now</a>
-		</div>
-	<?php endforeach ?>
+<div id="shop-now-modal" class="modal">
+	<div class="wrapper">
+		<h3>Buy Buzz Away Extreme online at these,<br>and many other fine online retailers</h3>
+		<span class="divider"></span>
+		<?php foreach ($retailers as $retailer) :
+			$name = $retailer['name'];
+			$logo = $retailer['logo'];
+			$link = $retailer['link']; ?>
+			
+			<div class="col-sm-4">
+				<div class="retailer">
+
+					<div class="retailer-logo-container">
+						<a class="retailer-logo" href="<?php echo $link ?>" alt="<?php echo $name ?>" style="background-image:url(<?php echo $logo ?>);" target="_blank"></a>
+					</div>
+					
+					<a href="<?php echo $link ?>" alt="<?php echo $name ?>" target="blank" class="teal-button button">Shop Now</a>
+				</div>
+			</div>
+			
+		<?php endforeach ?>
+	</div>
 </div>

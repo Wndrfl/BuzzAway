@@ -1,0 +1,79 @@
+.modal-overlay{
+	position: absolute;
+	
+	background-color: rgba(0,0,0,.7);
+	display: block;
+	opacity: 0;
+	@include transition(opacity .4s ease-in-out);
+	&.active{
+		top: 0; bottom:0;
+		left:0; right:0;
+		height: 100%;
+		width: 100%;
+		opacity: 1;
+		z-index: 4;
+	}
+}
+
+.modal{
+	position: fixed;
+	height:50%;
+	width: 80%;
+	@include center-center;
+	background-color: white;
+	z-index: -5;
+	opacity: 0;
+	padding:60px;
+	border:5px solid $green;
+	text-align: center;
+	@include transition(opacity .4s ease-in-out);
+	&.active{
+		z-index: 5;
+		opacity: 1;
+	}
+	/*.wrapper{
+		position: absolute;
+		width: 100%;
+		@include center-center;
+	}*/
+	h3{
+		color:$teal;
+		font-size: 25px;
+	}
+	.divider{
+		display:block;
+		background-color: $grey;
+		height:5px;
+		width: 60px;
+		margin:0 auto;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.retailer{
+		.retailer-logo-container{
+			border:1px solid black;
+			width: 100%;
+			padding:30px;
+		}
+		.retailer-logo{
+			display: inline-block;
+			height: 60px;
+			width: 100%;
+			background-position: center center;
+		}
+	}
+
+	.button{
+		margin-top: 30px;
+	}
+	
+}
+
+#shop-now-modal{
+
+}
+
+#find-a-store-modal{
+	
+}

@@ -50,18 +50,21 @@
 					$icon = $item['icon'];
 					$text = $item['text'];
 				?>
-					<div class="hero-prod-detail col-sm-3">
-						<div class="hero-prod-detail-image-container">
-							<span class="bracket"></span>
-							<div class="hero-prod-detail-icon" style="background-image:url(<?php echo $icon ?>);"></div>
-							<span class="bracket"></span>
+					<div class="col-sm-3">
+						<div class="hero-prod-detail">
+							<div class="hero-prod-detail-image-container">
+								<span class="bracket"></span>
+								<div class="hero-prod-detail-icon" style="background-image:url(<?php echo $icon ?>);"></div>
+								<span class="bracket"></span>
+							</div>
+							<div class="hero-prod-detail-text">
+								<span class="arrow"></span>
+								<p><?php echo $text ?></p>
+							</div>
+							
 						</div>
-						<div class="hero-prod-detail-text">
-							<span class="arrow"></span>
-							<p><?php echo $text ?></p>
-						</div>
-						
 					</div>
+					
 				<?php endforeach ?>
 			</div>
 		</div>
@@ -84,19 +87,23 @@
 		</div>
 	</div>
 
-	<div class="product-toggle-container container">
-		<?php foreach($products as $product) :
-			$title  = $product['title'];
-			$id 	= $product['id']; ?>
-			<div class="product-toggle col-xs-6" id="<?php echo $id ?>">
-				<div>
-					<h2><?php echo $title ?></h2>
-					<p>Shop Now</p>
+	<div class="container">
+		<div class="product-toggle-container col-md-8">
+			<?php foreach($products as $product) :
+				$title  = $product['title'];
+				$id 	= $product['id']; ?>
+				<div class="product-toggle col-xs-6" id="<?php echo $id ?>">
+					<div class="product-toggle-content">
+						<h2><?php echo $title ?></h2>
+						<p>Shop Now</p>
+					</div>
+					<div class="shadow"></div>
+					<span class="arrow"></span>
 				</div>
-				<span class="arrow"></span>
-			</div>
-		<?php endforeach ?>
+			<?php endforeach ?>
+		</div>	
 	</div>
+	
 
 	<?php foreach($products as $product) :
 		$title  = $product['title'];
@@ -107,23 +114,27 @@
 		<div class="product-wrapper <?php echo $class ?>">
 			<div class="product">
 				<div class="container">
-					<div class="product-image" style="background-image:url(<?php echo $main_image ?>)"></div>
 
-					<!-- <h2><?php echo $title ?><span>Shop Now</span></h2> -->
+					<div class="product-image col-xs-12 col-md-4" style="background-image:url(<?php echo $main_image ?>)"></div>
+					<div class="col-md-8">
+						<p class="desc"><?php echo $desc ?></p>
+						<ul class="product-specs">
+							<?php foreach ($product['specs'] as $spec) : ?>
+								<li><?php echo $spec ?></li>
+							<?php endforeach ?>
+						</ul>
+						<div class="where-to-buy">
+							<p>Where to Buy:</p>
+							<?php foreach($product['stores'] as $store) :
+								$logo = $store['logo'];
 
-					<p><?php echo $desc ?></p>
-					<ul class="product-specs">
-						<?php foreach ($product['specs'] as $spec) : ?>
-							<li><?php echo $spec ?></li>
-						<?php endforeach ?>
-					</ul>
-					<div class="where-to-buy">
-						<p>Where to Buy:</p>
-						<?php foreach($product['stores'] as $store) :?>
-							<a href="<?php echo $store['link'] ?>" style="background-image:url(<?php echo $logo ?>);"></a>
-						<?php endforeach ?>
-						<a href="" class="button green-button">Find A Store</a>
+							?>
+								<a class="where-to-buy-logo" href="<?php echo $store['link'] ?>" style="background-image:url(<?php echo $logo ?>);"></a>
+							<?php endforeach ?>
+							<a href="" class="button green-button pull-right">Find A Store</a>
+						</div>
 					</div>
+					
 				</div>
 			</div>
 
