@@ -21,14 +21,15 @@ $hero_prod_info = array(
 
 $products = array(
 	array(
-		'title' => 'Buzz Away Extreme Spray',
+		'title' 	 => 'Buzz Away Extreme Spray',
+		'id'		 => 'buzz-away-extreme-spray',
 		'main_image' => '/img/buzz-away-extreme-spray.png',
-		'desc' => 'The natural repellent that has you covered against bites for hours. Made from essential plant oils and other natural ingredients, Buzz Away Extreme’s safe, DEET-free formula wards off mosquitoes for up to 4 hours and ticks for up to 2 1/2 hours. Why expose yourself and your family to harsh chemical products when a proven, natural repellent has you covered?',
-		'specs' => array(
+		'desc' 		 => 'The natural repellent that has you covered against bites for hours. Made from essential plant oils and other natural ingredients, Buzz Away Extreme’s safe, DEET-free formula wards off mosquitoes for up to 4 hours and ticks for up to 2 1/2 hours. Why expose yourself and your family to harsh chemical products when a proven, natural repellent has you covered?',
+		'specs'		 => array(
 			'Handy pump bottle is ready whenever you need protection from buzzing outdoor pests.',
 			'Available in eco-friendly packaging in convenient pocket-size 2 oz (approved for air travel), 4 oz and 8 oz.'
 		),
-		'stores' => array(
+		'stores' 	=> array(
 			array(
 				'logo' => '/img/whole-foods.png',
 				'link' => 'http://www.wholefoods.com'
@@ -61,6 +62,7 @@ $products = array(
 	),
 	array(
 		'title' => 'Buzz Away Extreme Towelette',
+		'id'	=> 'buzz-away-extreme-towelettes',
 		'main_image' => '/img/buzz-away-extreme-towelettes.png',
 		'desc' => 'As easy as One-Two-Swipe. Our DEET-free, family-friendly towelettes make protecting yourself and your loved ones as easy as One-Two-Swipe. Great for weekend trips, camp and travel, Buzz Away Extreme’s non-greasy formula keeps mosquitoes at bay for up to 4 hours and ticks for up to 2.5 hours.',
 		'specs' => array(

@@ -4,7 +4,7 @@
 	<title>Buzz Away</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 	<link href="/img/favicon.png" rel="shortcut icon">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">

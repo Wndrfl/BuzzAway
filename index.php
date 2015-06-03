@@ -11,15 +11,19 @@
 			<div class="hero-prod-image" style="background-image:url(/img/main-prod-image.png);"></div>
 
 			<div class="hero-headline">
-				<h1>A Naturally Effective Way to Protect from Insects</h1>
+
+				<h1><div class="blur"></div><span>A Naturally Effective Way to Protect from Insects</span></h1>
 				<div class="hero-text">
-					<span class="icon" style="background-image:url(/img/hero-icon-1.png);"></span>
-					<p>Natural Botanical Formula that is completely DEET-free</p>
+					<div class="col-xs-6">
+						<span class="icon col-xs-4" style="background-image:url(/img/hero-icon-1.png);"></span>
+						<p class="col-xs-8">Natural Botanical Formula that is completely DEET-free</p>
+					</div>
+					<div class="col-xs-6">
+						<span class="icon col-xs-4" style="background-image:url(/img/hero-icon-2.png);"></span>
+						<p class="col-xs-8">Available in Spray or Towelettes for Easy Application</p>
+					</div>
 				</div>
-				<div class="hero-text">
-					<span class="icon" style="background-image:url(/img/hero-icon-2.png);"></span>
-					<p>Available in Spray or Towelettes for Easy Application</p>
-				</div>
+				
 			</div>
 
 			
@@ -47,7 +51,7 @@
 					$icon = $item['icon'];
 					$text = $item['text'];
 				?>
-					<div class="hero-prod-detail">
+					<div class="hero-prod-detail col-sm-3">
 						<div class="hero-prod-detail-image-container">
 							<span class="bracket"></span>
 							<div class="hero-prod-detail-icon" style="background-image:url(<?php echo $icon ?>);"></div>
@@ -69,11 +73,30 @@
 <section class="main-section main-section-product">
 	<div class="container">
 		<div class="product-desc">
-			<span class="corner"></span>
-			<?php echo $main_desc ?>
-			<span class="corner"></span>
-			<a href="" class="main-button green-button"></a>
+
+			<span class="corner cut left"></span>
+			<span class="corner blue left"></span>
+			<p>Offering a long-lasting and extremely effective DEET-free repellent, Buzz Away Extreme provides a family-friendly eco-positive alternative for anyone who spends time outdoors. Buzz Away Extreme's spray or towelette application process and unique blend of natural plant oils are designed to help avoid insect bites over an extended period of time.</p>
+			<span class="corner blue right"></span>
+			<span class="corner cut right"></span>
+
+			<a href="" class="button teal-button shop-now">Shop Now</a>
+			<a href="" class="button green-button find-a-store">Find A Store</a>
 		</div>
+	</div>
+
+	<div class="product-toggle-container container">
+		<?php foreach($products as $product) :
+			$title  = $product['title'];
+			$id 	= $product['id']; ?>
+			<div class="product-toggle col-xs-6" id="<?php echo $id ?>">
+				<div>
+					<h2><?php echo $title ?></h2>
+					<p>Shop Now</p>
+				</div>
+				<span class="arrow"></span>
+			</div>
+		<?php endforeach ?>
 	</div>
 
 	<?php foreach($products as $product) :
@@ -81,12 +104,11 @@
 		$main_image  = $product['main_image'];
 		$desc = $product['desc'];
 		?>
-
-			<div class="main-product">
+			<div class="product">
 				<div class="container">
-					<div class="main-product-image" style="<?php echo $main_image ?>"></div>
+					<div class="product-image" style="background-image:url(<?php echo $main_image ?>)"></div>
 
-					<h2><?php echo $title ?><span>Shop Now</span></h2>
+					<!-- <h2><?php echo $title ?><span>Shop Now</span></h2> -->
 
 					<p><?php echo $desc ?></p>
 					<ul class="product-specs">

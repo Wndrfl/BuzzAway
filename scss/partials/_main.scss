@@ -9,14 +9,15 @@
 body{
 	overflow-x:hidden;
 }
+
 a{
 	text-decoration: none;
-
 	&:hover, &:focus, &:active{
-		text-decoration:none;
+		text-decoration:none !important;
 		border:none;
 	}
 }
+
 p{
 	font-size: 1.3em;
 }
@@ -69,6 +70,7 @@ p{
 .main-header{
 	height:200px;
 	position: relative;
+
 	@include breakpoint(tablet-screen){
 		height:100px;
 	}
@@ -93,6 +95,8 @@ p{
 			@include breakpoint(tablet-screen){
 				height:100px;
 				width: 312px;
+				top:initial;
+				bottom:initial;
 			}
 		}
 	}
@@ -122,6 +126,8 @@ p{
 			width: 33.3%;
 			text-align: center;
 			@include breakpoint(tablet-screen){
+				height:60px;
+				line-height: 60px;
 				@include border-radius(10px);
 			}
 		}
@@ -148,10 +154,13 @@ p{
 		.hero-prod-image{
 			height: 460px;
 			padding-top:60px;
-			@include breakpoint(tablet-scren){
+
+			@include breakpoint(tablet-screen){
 				display: inline-block;
 				height: 600px;
 				width: 420px;
+				left: 0px;
+				padding:0px;
 				position: absolute;
 				z-index: 1;
 			}
@@ -162,7 +171,6 @@ p{
 		display: inline-block;
 		position: relative;
 		color:white;
-		margin-bottom: 60px;
 		@include breakpoint(tablet-screen){
 			display: inline-block;
 			position: absolute;
@@ -170,45 +178,56 @@ p{
 			top:60px;
 			width: 60%;
 		}
+
 		h1{
 			text-align: center;
 			padding:30px;
 			border:1px solid;
+			position: relative;
+			overflow: hidden;
+			background-image:url(/img/hero-image.png);
+			margin:0px;
+			background-size: 1400px;
+			background-position: right;
+			.blur{
+				z-index: 0;
+				position: absolute;
+				top:0px; bottom:0;
+				right: 0; left: 0;
+				-webkit-filter: blur(10px); /* Chrome, Opera, etc. */
+				filter: blur(10px); /* Firefox 35+, eventually all */
+			
+			}
+			span{
+				z-index: 1;
+			}
 		}
 		.hero-text{
-			border-right:1px solid;
-			border-bottom: 1px solid;
-			width: 49.55%;
-			float: left;
-
-			&:first-of-type{
-				border-left:1px solid;
-			}
-			@include breakpoint(tablet-screen){
-				padding:30px;
+			border:1px solid white;
+			border-top:none;
+			position: absolute;
+			
+			.col-xs-6{
+				padding-left:0px;
+				position: relative;
+				&:first-of-type{
+					border-right:1px solid;
+				}
 			}
 			.icon{
 				display: inline-block;
 				height: 78px;
 				width: 78px;
 				background-color: rgba(255,255,255,.5);
-				border-bottom:1px solid;
 				border-right:1px solid;
 				float: left;
 				margin-right: 15px;
-				@include breakpoint(tablet-screen){
-					height: 50px;
-					width: 50px;
-				}
 			}
+
 			p{
 				display: inline-block;
 				float: left;
 				font-size: 12pt;
-				width: 60%;
-				@include breakpoint(tablet-screen){
-					font-size: 10pt;
-				}
 			}
 		}
 	}
@@ -232,12 +251,17 @@ p{
 			position: relative;
 			display: inline-block;
 			width: 100%;
-
+			@include breakpoint(tablet-screen){
+				width:initial;
+			}
 			.button{
 				width: 50%;
 				float: left;
 				display: inline-block;
 				@include border-radius(0px);
+				@include breakpoint(tablet-screen){
+					width: initial;
+				}
 			}
 
 			@include breakpoint(tablet-screen){
@@ -315,34 +339,31 @@ p{
 		display: inline-block;
 		margin-left: -15px;
 		margin-right: -15px;
+
 		@include breakpoint(tablet-screen){
 			margin-left: 0;
 			margin-right: 0;
 			display: block;
 			position: absolute;
+			width: 100%;
 			@include horizontal-center;
 			bottom:0px;
-			padding:30px;	
+			padding:30px;
+			padding-bottom: 0px;
+			background-color: transparent;
 		}
 
 		.hero-prod-detail{
 			display: inline-block;
-			width: 100%;
-			margin-right:1%;
-			float: left;
 			position: relative;
-
+			
 			@include breakpoint(tablet-screen){
-				display: inline-block;
-				width: 24%;
-				margin-right:1%;
-				float: left;
-				height: 200px;
-				position: relative;
+				
 			}
 
 			.hero-prod-detail-image-container{
 				position: relative;
+
 				.bracket{
 					height:100%;
 					width: 30px;
@@ -360,6 +381,7 @@ p{
 						right: 0px;
 					}
 				}
+
 				.hero-prod-detail-icon{
 					display: block;
 					height:230px;
@@ -380,6 +402,23 @@ p{
 				margin-bottom: 15px;
 				@include border-radius(50px);
 				position: relative;
+
+				@include breakpoint(tablet-screen){
+					position:absolute;
+					bottom: 0px;
+					background-color: $teal;
+					margin-top:30px;
+					margin-bottom: 30px;
+					-webkit-border-bottom-left-radius: 0px;
+						-ms-border-bottom-left-radius: 0px;
+							-o-border-bottom-left-radius: 0px;
+								border-bottom-left-radius: 0px;
+					-webkit-border-bottom-right-radius: 0px;
+						-ms-border-bottom-right-radius: 0px;
+							-o-border-bottom-right-radius: 0px;
+								border-bottom-right-radius: 0px;
+				}
+
 				.arrow{
 					position: absolute;
 					top:-24px;
@@ -388,8 +427,10 @@ p{
 					height: 0;
 					border-bottom: 24px solid $dark-grey;
 					border-left: 24px solid transparent;
-					border-right:25px solid transparent
-
+					border-right:25px solid transparent;
+					@include breakpoint(tablet-screen){
+						display:none;
+					}
 				}
 				p{
 					font-size: 24px;
@@ -397,17 +438,169 @@ p{
 					text-align: center;
 				}
 			}
-		}
-		
-		
-		
+		}	
 	}
-	
-	
 }
 
 .main-section-product{
-	.prod-desc{
+	.product-desc{
 		background-color: $beige;
+		position: relative;
+		display: inline-block;
+		margin-top:15px;
+		margin-bottom:15px;
+		padding:15px;
+		text-align: center;
+		
+		.corner{
+			position: absolute;
+			display: inline-block;
+			opacity: 0px;
+			width: 0;
+			height: 0;
+
+			@include breakpoint(tablet-screen){
+				opacity: 1;
+			}
+			&:before, &:after{
+				content: "";
+				height:0; width: 0;
+				position: absolute;
+			}
+			&.cut{
+				z-index: 0;
+			}
+			&.cut.left{
+				border-bottom:30px solid white;
+				border-right:30px solid transparent;
+				left:0; bottom:0;
+			}
+			&.cut.right{
+				border-bottom:30px solid white;
+				border-left:30px solid transparent;
+				right:0; bottom:0;
+			}
+			&.blue{
+				z-index: 1;
+			}
+			&.blue.left{
+				border-bottom: 27px solid $teal;
+				border-right: 27px solid transparent;
+				bottom: 5px; left:5px;
+
+				&:after{
+					border-top: 5px solid $dark-beige;
+					border-left: 5px solid transparent;
+					border-right: 2px solid transparent;
+					left: 19.5px; bottom:-31.85px;
+				}
+				&:before{
+					border-right: 5px solid $dark-beige;
+					border-top: 2px solid transparent;
+					border-bottom: 6px solid transparent;
+					left:-5px; top:0px;
+				}
+			}
+
+			&.blue.right{
+				border-bottom: 27px solid $teal;
+				border-left: 27px solid transparent;
+				bottom: 5px; right:5px;
+
+				&:after{
+					border-top: 5px solid $dark-beige;
+					border-right: 5px solid transparent;
+					border-left: 2px solid transparent;
+					right: 20px; bottom:-31.85px;
+				}
+				&:before{
+					border-left: 5px solid $dark-beige;
+					border-top: 2px solid transparent;
+					border-bottom: 6px solid transparent;
+					right:-5px; top:0px;
+				}
+			}
+
+		}
+
+		@include breakpoint(tablet-screen){
+			margin-top:60px;
+			margin-bottom: 30px;
+		}
+
+		.button{
+			@include border-radius(50px);
+			padding:15px 30px;
+			margin-top:15px;
+			margin-bottom: 15px;
+			&.shop-now{
+				@include breakpoint(tablet-screen){
+					display: none;
+				}
+			}
+		}
+	}
+	.product-toggle-container{
+		display: block;
+		position: relative;
+
+		.product-toggle{
+			color:$dark-grey;
+			font-weight: bold;
+			width: 50%;
+			display: inline-block;
+			border:1px solid $dark-grey;
+			background-color: $beige;
+			height:150px;
+			text-align: center;
+			-webkit-border-top-left-radius: 15px;
+				-ms-border-top-left-radius: 15px;
+					border-top-left-radius: 15px;
+			-webkit-border-bottom-left-radius: 15px;
+				-ms-border-bottom-left-radius: 15px;
+					border-bottom-left-radius: 15px;
+
+			&:last-of-type{
+				border-top-left-radius: 0px;
+				border-bottom-left-radius: 0px;
+				border-top-right-radius: 15px;
+				border-bottom-right-radius: 15px;
+			}
+			> div{
+				position: absolute;
+				@include center-center;
+				width: 90%;
+			}
+			.arrow{
+				height:0;
+				width: 0;
+				border-top: 24px solid $dark-grey;
+				border-left:24px solid transparent;
+				border-right: 24px solid transparent;
+				position: absolute;
+				bottom: -24px;
+				opacity: 0;
+				@include horizontal-center;
+			}
+
+			&.active{
+				background-color:$dark-grey;
+				color:white;
+				.arrow{
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.product{
+		.product-image{
+			display:block;
+			width: 100%;
+			height: 300px;
+			margin-top:30px;
+			margin-bottom: 30px;
+			border:3px solid $dark-grey;
+			@include border-radius(15px);
+		}
 	}
 }
