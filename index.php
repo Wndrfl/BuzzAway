@@ -93,7 +93,7 @@
 	</div>
 
 	<div class="container">
-		<div class="product-toggle-container col-md-8">
+		<div class="product-toggle-container col-xs-12 col-md-8">
 			<?php foreach($products as $product) :
 				$title  = $product['title'];
 				$id 	= $product['id']; ?>
@@ -123,11 +123,10 @@
 					<div class="col-xs-12 col-md-4 product-image-container">
 						<div class="product-image-inner-container">
 							<div class="product-image" style="background-image:url(<?php echo $main_image ?>)"></div>
-						</div>
-							
+						</div>	
 					</div>
 					
-					<div class="col-md-8">
+					<div class="col-xs-12 col-md-8">
 						<p class="desc"><?php echo $desc ?></p>
 						<ul class="product-specs">
 							<?php foreach ($product['specs'] as $spec) : ?>
@@ -159,12 +158,12 @@
 						?>
 						<div class="col-sm-4">
 							<div class="variation">
-								<div class="col-xs-5">
+								<div class="col-xs-12 col-md-5">
 									<div class="variation-image-container">
 										<div class="variation-image" style="background-image:url(<?php echo $image ?>);"></div>
 									</div>									
 								</div>
-								<div class="col-xs-7 variation-details">
+								<div class="col-xs-12 col-md-7 variation-details">
 									<p class="variation-size"><?php echo $size ?></p>
 									<p class="variation-price">MSRP <?php echo $price ?><span>(prices vary online)</span></p>
 									<span class="divider"></span>
