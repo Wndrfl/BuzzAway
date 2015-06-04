@@ -582,7 +582,7 @@ p {
     @media (min-width: 768px) {
       .main-section-product .product-toggle-container {
         float: right;
-        margin-top: 60px; } }
+        margin-top: 15px; } }
     .main-section-product .product-toggle-container .product-toggle {
       color: #716967;
       font-weight: bold;
@@ -601,7 +601,7 @@ p {
       border-bottom-left-radius: 15px; }
       @media (min-width: 768px) {
         .main-section-product .product-toggle-container .product-toggle {
-          height: 100px;
+          height: 90px;
           margin-bottom: 30px; } }
       .main-section-product .product-toggle-container .product-toggle:last-of-type {
         border-top-left-radius: 0px;
@@ -622,6 +622,8 @@ p {
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         width: 90%; }
+        .main-section-product .product-toggle-container .product-toggle .product-toggle-content h2 {
+          font-size: 17px; }
       .main-section-product .product-toggle-container .product-toggle .shadow {
         display: none;
         position: absolute;
@@ -691,8 +693,8 @@ p {
         display: inline-block;
         float: left;
         position: relative;
-        top: -12px;
-        height: 700px;
+        top: -34px;
+        height: 555px;
         border-bottom: none;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px; } }
@@ -718,26 +720,28 @@ p {
         margin-right: 0px;
         margin-left: 0px; } }
   .main-section-product .product .product-image {
-    height: 100%;
+    height: 96%;
     width: 100%; }
     @media (min-width: 768px) {
       .main-section-product .product .product-image {
         margin-top: 12px; } }
   .main-section-product .product .desc {
     font-family: "Open Sans", sans-serif;
-    color: #716967; }
+    color: #716967;
+    font-size: 16px; }
     .main-section-product .product .desc strong {
       font-family: "Open Sans", sans-serif; }
   .main-section-product .product .product-specs {
-    margin: 30px 0px 30px 15px;
-    padding: 30px 0px 0px 0px;
+    margin: 20px 0px 20px 0px;
+    padding: 20px 0px 0px 0px;
     border-top: 1px solid #F1F1F1;
     border-bottom: 1px solid #F1F1F1;
     font-size: 16px;
     color: #716967; }
     .main-section-product .product .product-specs li {
       font-family: "Open Sans", sans-serif;
-      margin-bottom: 30px; }
+      margin-bottom: 15px;
+      margin-left: 15px; }
       @media (min-width: 768px) {
         .main-section-product .product .product-specs li {
           width: 70%; } }
@@ -747,13 +751,16 @@ p {
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
     margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-bottom: 15px; }
   .main-section-product .product .where-to-buy .where-to-buy-logo {
     display: inline-block;
     height: 60px;
-    width: 150px;
+    width: 200px;
     margin-right: 30px;
     position: relative; }
+  .main-section-product .product .where-to-buy .button {
+    font-size: 16px;
+    padding: 18px 40px; }
   .main-section-product .product-variations {
     background-color: #F2DD19;
     border-top: 2px solid #716967;
@@ -761,7 +768,7 @@ p {
     padding-bottom: 30px; }
     @media (min-width: 768px) {
       .main-section-product .product-variations {
-        margin-top: -42px; } }
+        margin-top: -70px; } }
     .main-section-product .product-variations .col-sm-4:first-of-type {
       padding-left: 0px; }
     .main-section-product .product-variations .variation {
@@ -773,15 +780,27 @@ p {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       font-family: "Open Sans", sans-serif;
-      height: 367px; }
+      height: 336px; }
+    .main-section-product .product-variations .variation-image-container {
+      position: relative;
+      top: 30px; }
     .main-section-product .product-variations .variation-image {
+      background-position-x: -15px;
       display: inline-block;
       height: 200px;
-      width: 100%;
-      position: relative; }
+      width: 200px; }
+    .main-section-product .product-variations .variation-details {
+      position: relative;
+      top: 40px; }
+      .main-section-product .product-variations .variation-details .divider {
+        position: relative;
+        background-color: #CBCBCB;
+        width: 30px;
+        height: 3px;
+        display: inline-block; }
     .main-section-product .product-variations .variation-size {
       color: #00AA97;
-      font-size: 30px;
+      font-size: 27px;
       font-weight: bold; }
     .main-section-product .product-variations .variation-price {
       font-family: "Open Sans", sans-serif;
@@ -795,12 +814,26 @@ p {
     .main-section-product .product-variations .variation-name {
       font-family: "Open Sans", sans-serif;
       font-weight: normal;
-      font-size: 25px; }
+      font-size: 23px;
+      color: #333333; }
+    .main-section-product .product-variations .col-xs-12 {
+      position: relative; }
     .main-section-product .product-variations .shop-now {
       width: 100%;
       text-align: center;
       font-size: 16px;
       margin-top: 15px; }
+      @media (min-width: 768px) {
+        .main-section-product .product-variations .shop-now {
+          width: initial;
+          position: absolute;
+          bottom: -90px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          transform: translateX(-50%); } }
 
 .main-section.has-shadow {
   background-color: #FAF7F2;
@@ -969,11 +1002,11 @@ p {
   background-color: rgba(0, 0, 0, 0.7);
   display: block;
   opacity: 0;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  -ms-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out; }
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
   .modal-overlay.active {
     top: 0;
     bottom: 0;
@@ -982,7 +1015,7 @@ p {
     height: 100%;
     width: 100%;
     opacity: 1;
-    z-index: 4; }
+    z-index: 6; }
 
 .modal {
   position: fixed;
@@ -1008,7 +1041,7 @@ p {
   -o-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out; }
   .modal.active {
-    z-index: 5;
+    z-index: 6;
     opacity: 1; }
   .modal h3 {
     color: #00AA97;

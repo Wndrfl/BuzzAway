@@ -15,7 +15,7 @@ $(function(){
 		$('.modal-overlay').addClass('active');
 	});
 
-	$('.modal-close').click(function(){
+	$('.modal-overlay').click(function(){
 		console.log('modal');
 		$('.modal').removeClass('active');
 		$('.modal-overlay').removeClass('active');

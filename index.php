@@ -154,16 +154,18 @@
 						?>
 						<div class="col-sm-4">
 							<div class="variation">
-								<div class="col-xs-6">									
-									<div class="variation-image" style="background-image:url(<?php echo $image ?>);"></div>
+								<div class="col-xs-5">
+									<div class="variation-image-container">
+										<div class="variation-image" style="background-image:url(<?php echo $image ?>);"></div>
+									</div>									
 								</div>
-								<div class="col-xs-6">
+								<div class="col-xs-7 variation-details">
 									<p class="variation-size"><?php echo $size ?></p>
 									<p class="variation-price">MSRP <?php echo $price ?><span>(prices vary online)</span></p>
 									<span class="divider"></span>
 									<h3 class="variation-name"><?php echo $name ?></h3>
 								</div>
-								<a href="" class="button teal-button shop-now">Shop Now</a>
+								<div class="col-xs-12"><a href="" class="button teal-button shop-now">Shop Now</a></div>
 							</div>
 						</div>
 					<?php endforeach ?>

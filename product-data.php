@@ -41,19 +41,19 @@ $products = array(
 		),
 		'variations' => array(
 			array(
-				'size' => '2oz. Spray',
+				'size' => '2oz. SPRAY',
 				'price' => '$6.99',
 				'name' => 'Buzz Away Extreme, 2oz.',
 				'image' => '/img/buzz-away-extreme-spray-2oz.png'
 			),
 			array(
-				'size' => '4oz. Spray',
+				'size' => '4oz. SPRAY',
 				'price' => '$9.99',
 				'name' => 'Buzz Away Extreme, 4oz.',
 				'image' => '/img/buzz-away-extreme-spray-4oz.png'
 			),
 			array(
-				'size' => '8oz. Spray',
+				'size' => '8oz. SPRAY',
 				'price' => '$16.99',
 				'name' => 'Buzz Away Extreme, 8oz.',
 				'image' => '/img/buzz-away-extreme-spray-8oz.png'
