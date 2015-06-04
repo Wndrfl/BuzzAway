@@ -154,9 +154,12 @@ p {
       display: inline;
       height: 100px;
       line-height: 100px;
-      text-align: center; }
+      text-align: center;
+      width: 33.33%;
+      font-size: 14px; }
       @media (min-width: 768px) {
         .main-header .main-header-right .button {
+          width: initial;
           float: none;
           padding: 10px 20px;
           -webkit-border-radius: 10px;

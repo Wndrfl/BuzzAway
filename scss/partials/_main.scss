@@ -145,7 +145,10 @@ p{
 			height:100px;
 			line-height: 100px;
 			text-align: center;
+			width: 33.33%;
+			font-size: 14px;
 			@include breakpoint(tablet-screen){
+				width: initial;
 				float: none;
 				padding: 10px 20px;
 				@include border-radius(10px);
