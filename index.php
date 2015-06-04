@@ -16,11 +16,16 @@
 				<div class="hero-text">
 					<div class="col-xs-6">
 						<span class="icon col-xs-4" style="background-image:url(/img/hero-icon-1.png);"></span>
-						<p class="col-xs-8">Natural Botanical Formula that is completely DEET-free</p>
+						<div class="col-xs-8">
+							<p>Natural Botanical Formula that is completely DEET-free</p>
+						</div>
 					</div>
 					<div class="col-xs-6">
 						<span class="icon col-xs-4" style="background-image:url(/img/hero-icon-2.png);"></span>
-						<p class="col-xs-8">Available in Spray or Towelettes for Easy Application</p>
+						<div class="col-xs-8">
+							<p>Available in Spray or Towelettes for Easy Application</p>
+						</div>
+						
 					</div>
 				</div>
 				

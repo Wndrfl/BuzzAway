@@ -24,6 +24,12 @@ a{
 }
 h3{
 	font-size: 25px;
+	@include breakpoint(tablet-screen){
+		font-size: 20px;
+	}
+	@include breakpoint(large-desktop-screen){
+		font-size: 25px;
+	}
 }
 p{
 	font-size: 1.3em;
@@ -143,7 +149,7 @@ p{
 				margin-right: 15px;
 				font-size: 16px;
 			}
-			@include breakpoint(desktop-screen){
+			@include breakpoint(large-desktop-screen){
 				padding: 15px 35px;
 				font-size: 24px;
 			}
@@ -154,10 +160,13 @@ p{
 .main-section-hero{
 	background-image: url(/img/hero-image.png);
 	background-size: cover;
-
+	@include transition(all .2s ease-in-out);
 	@include breakpoint(tablet-screen){
-		height: 754px;
+		height: 650px;
 		position: relative;
+	}
+	@include breakpoint(large-desktop-screen){
+		height: 754px;
 	}
 
 	.container{
@@ -168,18 +177,23 @@ p{
 		position: relative;
 		display: block;
 		height: 100%;
+
 		.hero-prod-image{
 			height: 460px;
 			padding-top:60px;
-
+			@include transition(all .2s ease-in-out);
 			@include breakpoint(tablet-screen){
 				display: inline-block;
-				height: 536px;
-				width: 420px;
+				height: 425px;
+				width: 390px;
 				left: 0px;
 				padding:0px;
 				position: absolute;
 				z-index: 1;
+			}
+			@include breakpoint(large-desktop-screen){
+				height: 536px;
+				width: 420px;
 			}
 		}
 	}
@@ -188,11 +202,15 @@ p{
 		display: inline-block;
 		position: relative;
 		color:white;
+		@include transition(all .2s ease-in-out);
 		@include breakpoint(tablet-screen){
 			display: inline-block;
 			position: absolute;
 			right: 30px;
 			top:100px;
+			width: 53%;
+		}
+		@include breakpoint(large-desktop-screen){
 			width: 60%;
 		}
 
@@ -208,6 +226,9 @@ p{
 			background-position: -529px -154px;
 			font-size: 28px;
 			@include breakpoint(tablet-screen){
+				font-size: 24px;
+			}
+			@include breakpoint(large-desktop-screen){
 				font-size: 38px;
 			}
 			.blur{
@@ -243,8 +264,18 @@ p{
 				border-right:1px solid;
 				float: left;
 				margin-right: 15px;
-			}
 
+				@include breakpoint(tablet-screen){
+					height: 58px;
+					width: 58px;
+					margin-right: 0px;
+				}
+				@include breakpoint(large-desktop-screen){
+					height: 78px;
+					width: 78px;
+
+				}
+			}
 			p{
 				display: inline-block;
 				float: left;
@@ -252,6 +283,12 @@ p{
 				font-family: $sans;
 				margin-top: 5px;
 				text-shadow: 1px 1px 8px #000;
+				@include breakpoint(tablet-screen){
+					font-size: 12px;
+				}
+				@include breakpoint(large-desktop-screen){
+					font-size: 12pt;
+				}
 			}
 		}
 	}
@@ -280,6 +317,10 @@ p{
 				width:initial;
 				position: absolute;
 				top:-30px;
+				right:30px;
+			}
+
+			@include breakpoint(large-desktop-screen){
 				right:170px;
 			}
 
@@ -295,10 +336,19 @@ p{
 					@include border-radius(10px);
 					border:5px solid $beige;
 					opacity: 1;
+					font-size:16px;
 				}
-
+				@include breakpoint(large-desktop-screen){
+					font-size: 18px;
+				}
 				&.green-button{
 					margin-left:30px;
+					@include breakpoint(tablet-screen){
+						margin-left:15px;
+					}
+					@include breakpoint(large-desktop-screen){
+						margin-left:30px;
+					}
 				}
 			}
 		}
@@ -431,6 +481,7 @@ p{
 				@include border-radius(50px);
 				position: relative;
 				width: 100%;
+
 				@include breakpoint(tablet-screen){
 					position:absolute;
 					bottom: -5px;
@@ -438,7 +489,7 @@ p{
 					margin-top:30px;
 					margin-bottom: 0px;
 					padding:10px;
-					height: 85px;
+					height: 75px;
 
 					@include border-radius(20px);
 					-webkit-border-bottom-left-radius: 0px;
@@ -450,7 +501,9 @@ p{
 							-o-border-bottom-right-radius: 0px;
 								border-bottom-right-radius: 0px;
 				}
-
+				@include breakpoint(large-desktop-screen){
+					height: 85px;
+				}
 				.arrow{
 					position: absolute;
 					top:-24px;
@@ -474,6 +527,10 @@ p{
 						position: relative;
 						@include center-center;
 						width: 100%;
+						font-size: 14px;
+					}
+					@include breakpoint(large-desktop-screen){
+						font-size: 16px;
 					}
 				}
 			}
@@ -502,12 +559,19 @@ p{
 
 		}
 		@include breakpoint(desktop-screen){
+
 			height:200px;
 		}
 		p{
 			font-size: 25px;
 			color: $dark-grey;
 			font-weight: 300;
+			@include breakpoint(tablet-screen){
+				font-size: 20px;
+			}
+			@include breakpoint(large-desktop-screen){
+				font-size: 25px;
+			}
 		}
 		.corner{
 			position: absolute;
@@ -649,7 +713,7 @@ p{
 				.shop-now{
 					cursor: pointer;
 					opacity: .8;
-					
+
 					&:hover{
 						opacity:1;
 					}
@@ -798,6 +862,14 @@ p{
 				width: 200px;
 				margin-right:30px;
 				position: relative;
+				@include transition(all .2s ease-in-out);
+				@include breakpoint(tablet-screen){
+					width: 161px;
+				}
+				@include breakpoint(large-desktop-screen){
+					height: 60px;
+					width: 200px;
+				}
 			}
 			.button{
 				font-size: 16px;
@@ -827,6 +899,12 @@ p{
 			border-bottom-right-radius: 10px;
 			font-family: $sans;
 			height:336px;
+			@include breakpoint(tablet-screen){
+				height:280px;
+			}
+			@include breakpoint(large-desktop-screen){
+				height:336px;
+			}
 		}
 		.variation-image-container{
 		
@@ -837,7 +915,16 @@ p{
 			background-position-x:-15px;
 			display: inline-block;
 			height: 200px;
-			width: 200px;
+			width: 200px;	
+			@include transition(all .2s ease-in-out);
+			@include breakpoint(tablet-screen){
+				height: 160px;
+				width: 186px;
+			}
+			@include breakpoint(large-desktop-screen){
+				height: 200px;
+				width: 200px;
+			}
 		}
 		.variation-details{
 			position: relative;
@@ -855,6 +942,12 @@ p{
 			color:$teal;
 			font-size: 27px;
 			font-weight: bold;
+			@include breakpoint(tablet-screen){
+				font-size: 18px;
+			}
+			@include breakpoint(large-desktop-screen){
+				font-size: 27px;
+			}
 		}
 		.variation-price{
 			font-family: $sans;
@@ -866,12 +959,30 @@ p{
 				font-family: $sans;
 				display: block;
 			}
+			@include breakpoint(tablet-screen){
+				font-size: 14px;
+				span{
+					font-size: 12px;
+				}
+			}
+			@include breakpoint(large-desktop-screen){
+				font-size: 16px;
+				span{
+					font-size: 16px;
+				}
+			}
 		}
 		.variation-name{
 			font-family: $sans;
 			font-weight: normal;
 			font-size: 23px;
 			color:#333333;
+			@include breakpoint(tablet-screen){
+				font-size: 18px;
+			}
+			@include breakpoint(large-desktop-screen){
+				font-size:23px;
+			}
 		}
 		.col-xs-12{
 			position: relative;
@@ -885,9 +996,17 @@ p{
 			@include breakpoint(tablet-screen){
 				width: initial;
 				position: absolute;
-				bottom:-90px;
+				bottom:-80px;
+				font-size: 14px;
+				width: 100%;
 				@include horizontal-center;
 			}
+			@include breakpoint(large-desktop-screen){
+				bottom:-90px;
+				font-size: 16px;
+				width: initial;
+			}
+
 		}
 	}
 }
@@ -900,9 +1019,21 @@ p{
 	.variation{
 		.variation-image{
 			width: 150px;
+			@include breakpoint(tablet-screen){
+				width: 100px;
+			}
+			@include breakpoint(large-desktop-screen){
+				width: 150px;
+			}
 		}
 		.variation-name{
 			font-size: 18px;
+			@include breakpoint(tablet-screen){
+				font-size:14px;
+			}
+			@include breakpoint(large-desktop-screen){
+				font-size: 18px;
+			}
 		}
 	}
 }

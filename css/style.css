@@ -23,6 +23,12 @@ a {
 
 h3 {
   font-size: 25px; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 20px; } }
+  @media (min-width: 1200px) {
+    h3 {
+      font-size: 25px; } }
 
 p {
   font-size: 1.3em; }
@@ -151,18 +157,26 @@ p {
           border-radius: 10px;
           margin-right: 15px;
           font-size: 16px; } }
-      @media (min-width: 992px) {
+      @media (min-width: 1200px) {
         .main-header .main-header-right .button {
           padding: 15px 35px;
           font-size: 24px; } }
 
 .main-section-hero {
   background-image: url(/img/hero-image.png);
-  background-size: cover; }
+  background-size: cover;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
   @media (min-width: 768px) {
     .main-section-hero {
-      height: 754px;
+      height: 650px;
       position: relative; } }
+  @media (min-width: 1200px) {
+    .main-section-hero {
+      height: 754px; } }
   .main-section-hero .container {
     position: relative;
     height: 100%; }
@@ -172,26 +186,43 @@ p {
     height: 100%; }
     .main-section-hero .hero-prod-info .hero-prod-image {
       height: 460px;
-      padding-top: 60px; }
+      padding-top: 60px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
       @media (min-width: 768px) {
         .main-section-hero .hero-prod-info .hero-prod-image {
           display: inline-block;
-          height: 536px;
-          width: 420px;
+          height: 425px;
+          width: 390px;
           left: 0px;
           padding: 0px;
           position: absolute;
           z-index: 1; } }
+      @media (min-width: 1200px) {
+        .main-section-hero .hero-prod-info .hero-prod-image {
+          height: 536px;
+          width: 420px; } }
   .main-section-hero .hero-headline {
     display: inline-block;
     position: relative;
-    color: white; }
+    color: white;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
     @media (min-width: 768px) {
       .main-section-hero .hero-headline {
         display: inline-block;
         position: absolute;
         right: 30px;
         top: 100px;
+        width: 53%; } }
+    @media (min-width: 1200px) {
+      .main-section-hero .hero-headline {
         width: 60%; } }
     .main-section-hero .hero-headline h1 {
       text-transform: uppercase;
@@ -205,6 +236,9 @@ p {
       background-position: -529px -154px;
       font-size: 28px; }
       @media (min-width: 768px) {
+        .main-section-hero .hero-headline h1 {
+          font-size: 24px; } }
+      @media (min-width: 1200px) {
         .main-section-hero .hero-headline h1 {
           font-size: 38px; } }
       .main-section-hero .hero-headline h1 .blur {
@@ -237,6 +271,15 @@ p {
         border-right: 1px solid;
         float: left;
         margin-right: 15px; }
+        @media (min-width: 768px) {
+          .main-section-hero .hero-headline .hero-text .icon {
+            height: 58px;
+            width: 58px;
+            margin-right: 0px; } }
+        @media (min-width: 1200px) {
+          .main-section-hero .hero-headline .hero-text .icon {
+            height: 78px;
+            width: 78px; } }
       .main-section-hero .hero-headline .hero-text p {
         display: inline-block;
         float: left;
@@ -244,6 +287,12 @@ p {
         font-family: "Open Sans", sans-serif;
         margin-top: 5px;
         text-shadow: 1px 1px 8px #000; }
+        @media (min-width: 768px) {
+          .main-section-hero .hero-headline .hero-text p {
+            font-size: 12px; } }
+        @media (min-width: 1200px) {
+          .main-section-hero .hero-headline .hero-text p {
+            font-size: 12pt; } }
   .main-section-hero .hero-bottom-banner {
     background-color: #FAF7F2;
     height: 100px;
@@ -267,6 +316,9 @@ p {
           width: initial;
           position: absolute;
           top: -30px;
+          right: 30px; } }
+      @media (min-width: 1200px) {
+        .main-section-hero .hero-bottom-banner .hero-ctas {
           right: 170px; } }
       .main-section-hero .hero-bottom-banner .hero-ctas .button {
         width: 50%;
@@ -287,9 +339,19 @@ p {
             -o-border-radius: 10px;
             border-radius: 10px;
             border: 5px solid #FAF7F2;
-            opacity: 1; } }
+            opacity: 1;
+            font-size: 16px; } }
+        @media (min-width: 1200px) {
+          .main-section-hero .hero-bottom-banner .hero-ctas .button {
+            font-size: 18px; } }
         .main-section-hero .hero-bottom-banner .hero-ctas .button.green-button {
           margin-left: 30px; }
+          @media (min-width: 768px) {
+            .main-section-hero .hero-bottom-banner .hero-ctas .button.green-button {
+              margin-left: 15px; } }
+          @media (min-width: 1200px) {
+            .main-section-hero .hero-bottom-banner .hero-ctas .button.green-button {
+              margin-left: 30px; } }
     .main-section-hero .hero-bottom-banner .hero-corner-cut {
       display: none; }
       @media (min-width: 768px) {
@@ -413,7 +475,7 @@ p {
             margin-top: 30px;
             margin-bottom: 0px;
             padding: 10px;
-            height: 85px;
+            height: 75px;
             -webkit-border-radius: 20px;
             -moz-border-radius: 20px;
             -ms-border-radius: 20px;
@@ -427,6 +489,9 @@ p {
             -ms-border-bottom-right-radius: 0px;
             -o-border-bottom-right-radius: 0px;
             border-bottom-right-radius: 0px; } }
+        @media (min-width: 1200px) {
+          .main-section-hero .hero-prod-detail-wrapper .hero-prod-detail .hero-prod-detail-text {
+            height: 85px; } }
         .main-section-hero .hero-prod-detail-wrapper .hero-prod-detail .hero-prod-detail-text .arrow {
           position: absolute;
           top: -24px;
@@ -460,7 +525,11 @@ p {
               -ms-transform: translate(-50%, -50%);
               -o-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
-              width: 100%; } }
+              width: 100%;
+              font-size: 14px; } }
+          @media (min-width: 1200px) {
+            .main-section-hero .hero-prod-detail-wrapper .hero-prod-detail .hero-prod-detail-text p {
+              font-size: 16px; } }
 
 .main-section-product {
   -webkit-box-shadow: 0px -6px 15px -2px rgba(0, 0, 0, 0.39);
@@ -492,6 +561,12 @@ p {
       font-size: 25px;
       color: #716967;
       font-weight: 300; }
+      @media (min-width: 768px) {
+        .main-section-product .product-desc p {
+          font-size: 20px; } }
+      @media (min-width: 1200px) {
+        .main-section-product .product-desc p {
+          font-size: 25px; } }
     .main-section-product .product-desc .corner {
       position: absolute;
       display: inline-block;
@@ -762,7 +837,19 @@ p {
     height: 60px;
     width: 200px;
     margin-right: 30px;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    @media (min-width: 768px) {
+      .main-section-product .product .where-to-buy .where-to-buy-logo {
+        width: 161px; } }
+    @media (min-width: 1200px) {
+      .main-section-product .product .where-to-buy .where-to-buy-logo {
+        height: 60px;
+        width: 200px; } }
   .main-section-product .product .where-to-buy .button {
     font-size: 16px;
     padding: 18px 40px; }
@@ -786,6 +873,12 @@ p {
       border-bottom-right-radius: 10px;
       font-family: "Open Sans", sans-serif;
       height: 336px; }
+      @media (min-width: 768px) {
+        .main-section-product .product-variations .variation {
+          height: 280px; } }
+      @media (min-width: 1200px) {
+        .main-section-product .product-variations .variation {
+          height: 336px; } }
     .main-section-product .product-variations .variation-image-container {
       position: relative;
       top: 30px; }
@@ -793,7 +886,20 @@ p {
       background-position-x: -15px;
       display: inline-block;
       height: 200px;
-      width: 200px; }
+      width: 200px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      @media (min-width: 768px) {
+        .main-section-product .product-variations .variation-image {
+          height: 160px;
+          width: 186px; } }
+      @media (min-width: 1200px) {
+        .main-section-product .product-variations .variation-image {
+          height: 200px;
+          width: 200px; } }
     .main-section-product .product-variations .variation-details {
       position: relative;
       top: 40px; }
@@ -807,6 +913,12 @@ p {
       color: #00AA97;
       font-size: 27px;
       font-weight: bold; }
+      @media (min-width: 768px) {
+        .main-section-product .product-variations .variation-size {
+          font-size: 18px; } }
+      @media (min-width: 1200px) {
+        .main-section-product .product-variations .variation-size {
+          font-size: 27px; } }
     .main-section-product .product-variations .variation-price {
       font-family: "Open Sans", sans-serif;
       font-size: 16px;
@@ -816,11 +928,27 @@ p {
         color: #716967;
         font-family: "Open Sans", sans-serif;
         display: block; }
+      @media (min-width: 768px) {
+        .main-section-product .product-variations .variation-price {
+          font-size: 14px; }
+          .main-section-product .product-variations .variation-price span {
+            font-size: 12px; } }
+      @media (min-width: 1200px) {
+        .main-section-product .product-variations .variation-price {
+          font-size: 16px; }
+          .main-section-product .product-variations .variation-price span {
+            font-size: 16px; } }
     .main-section-product .product-variations .variation-name {
       font-family: "Open Sans", sans-serif;
       font-weight: normal;
       font-size: 23px;
       color: #333333; }
+      @media (min-width: 768px) {
+        .main-section-product .product-variations .variation-name {
+          font-size: 18px; } }
+      @media (min-width: 1200px) {
+        .main-section-product .product-variations .variation-name {
+          font-size: 23px; } }
     .main-section-product .product-variations .col-xs-12 {
       position: relative; }
     .main-section-product .product-variations .shop-now {
@@ -832,13 +960,20 @@ p {
         .main-section-product .product-variations .shop-now {
           width: initial;
           position: absolute;
-          bottom: -90px;
+          bottom: -80px;
+          font-size: 14px;
+          width: 100%;
           left: 50%;
           -webkit-transform: translateX(-50%);
           -moz-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
           -o-transform: translateX(-50%);
           transform: translateX(-50%); } }
+      @media (min-width: 1200px) {
+        .main-section-product .product-variations .shop-now {
+          bottom: -90px;
+          font-size: 16px;
+          width: initial; } }
 
 .buzz-away-extreme-towelettes.active .product-image {
   height: 80%;
@@ -852,9 +987,21 @@ p {
 
 .buzz-away-extreme-towelettes.active .variation .variation-image {
   width: 150px; }
+  @media (min-width: 768px) {
+    .buzz-away-extreme-towelettes.active .variation .variation-image {
+      width: 100px; } }
+  @media (min-width: 1200px) {
+    .buzz-away-extreme-towelettes.active .variation .variation-image {
+      width: 150px; } }
 
 .buzz-away-extreme-towelettes.active .variation .variation-name {
   font-size: 18px; }
+  @media (min-width: 768px) {
+    .buzz-away-extreme-towelettes.active .variation .variation-name {
+      font-size: 14px; } }
+  @media (min-width: 1200px) {
+    .buzz-away-extreme-towelettes.active .variation .variation-name {
+      font-size: 18px; } }
 
 .main-section.has-shadow {
   background-color: #FAF7F2;
