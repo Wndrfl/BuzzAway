@@ -708,7 +708,15 @@ p{
 				@include center-center;
 				width: 90%;
 
-				h2{font-size: 17px;}
+				h2{
+					font-size: 17px;
+					@include breakpoint(tablet-screen){
+						font-size: 14px;
+					}
+					@include breakpoint(large-desktop-screen){
+						font-size: 17px;
+					}
+				}
 
 				.shop-now{
 					cursor: pointer;
@@ -716,6 +724,13 @@ p{
 
 					&:hover{
 						opacity:1;
+					}
+
+					@include breakpoint(tablet-screen){
+						font-size: 14px;
+					}
+					@include breakpoint(large-desktop-screen){
+						font-size: initial;
 					}
 				}
 			}
@@ -1015,6 +1030,12 @@ p{
 		height:80%;
 		position: absolute;
 		@include vertical-center;
+		@include breakpoint(tablet-screen){
+			height:60%;
+		}
+		@include breakpoint(large-desktop-screen){
+			height:80%;
+		}
 	}
 	.variation{
 		.variation-image{
