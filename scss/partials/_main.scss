@@ -883,6 +883,11 @@ p{
 	}
 }
 .buzz-away-extreme-towelettes.active{
+	.product-image{
+		height:80%;
+		position: absolute;
+		@include vertical-center;
+	}
 	.variation{
 		.variation-image{
 			width: 150px;
