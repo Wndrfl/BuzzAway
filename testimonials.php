@@ -1,10 +1,16 @@
+<div class="testimonials-slider">
 <?php
 
 $testimonials = array(
 	array(
-		'quote' => "The mosquitoes in the Amazon they're as big as birds – Buzz Away Extreme worked even under the harshest conditions.",
+		'quote' => "The mosquitoes in the Amazon they're as big as birds - Buzz Away Extreme worked even under the harshest conditions.",
 		'name' => 'Dr. Marcus Laux,',
 		'role' => 'Expedition leader'
+	),
+	array(
+		'quote' => 'fff',
+		'name' => 'fff',
+		'role' => 'fff'
 	),
 	array(
 		'quote' => 'fff',
@@ -31,3 +37,6 @@ foreach ($testimonials as $entry) :
 <?php endforeach
 
 ?>
+
+
+</div>

@@ -22,7 +22,9 @@ a{
 		color: white;
 	}
 }
-
+h3{
+	font-size: 25px;
+}
 p{
 	font-size: 1.3em;
 }
@@ -732,10 +734,188 @@ p{
 			.where-to-buy-logo{
 				display: inline-block;
 				height: 60px;
-				width: 200px;
+				width: 150px;
 				margin-right:30px;
 				position: relative;
 			}
 		}
+	}
+	.product-variations{
+		background-color: $yellow;
+		border-top:2px solid $dark-grey;
+		border-bottom:2px solid $dark-grey;
+		padding-bottom: 30px;
+		.variation{
+			display: inline-block;
+			border:2px solid $dark-grey;
+			border-top:0px;
+			padding:15px;
+			background-color: white;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			font-family: $sans;
+		}
+		.variation-image{
+			display: inline-block;
+			height: 200px;
+			width: 100%;
+			position: relative;
+		}
+		.variation-size{
+			color:$teal;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		.variation-price{
+			font-family: $sans;
+			font-size: 16px;
+			color:$dark-grey;
+			span{
+				font-size: 16px;
+				color:$dark-grey;
+				font-family: $sans;
+				display: block;
+			}
+		}
+		.variation-name{
+			font-family: $sans;
+			font-weight: normal;
+			font-size: 25px;
+		}
+		.shop-now{
+			width: 100%;
+			text-align: center;
+			font-size: 16px;
+			margin-top:15px;
+		}
+	}
+}
+
+.main-section.has-shadow{
+	background-color: $beige;
+	display: block;
+	height: 217px;
+	position: relative;
+	padding-top:30px;
+	
+	h3{
+		position: absolute;
+		@include center-center;
+		text-align: center;
+		margin:0 auto;
+		width: 90%;
+		max-width: 1170px;
+		font-weight: 100;
+		color: $dark-grey;
+		strong{
+			color: $teal;
+			font-weight: bold;
+		}
+	}
+}
+.top-shadow, .bottom-shadow{
+	display: inline-block;
+	position: absolute;
+	left: -1%; right:0;
+	height:60px;
+	width: 102%;
+}
+.top-shadow{
+	top:0;
+	@include box-shadow(inset -1px 10px 20px -8px rgba(0,0,0,0.35));
+}
+.bottom-shadow{
+	bottom:0;
+	@include box-shadow(inset -1px -10px 20px -8px rgba(0,0,0,0.35));
+}
+.data-section{
+	position: relative;
+	padding-bottom:60px;
+	.title-container{
+		position: relative;
+		text-align: center;
+		top: 0px;
+		@include horizontal-center;
+		background-color: $dark-grey;
+		padding:30px;
+		margin-bottom: 30px;
+		border-bottom-right-radius:15px;
+		border-bottom-left-radius: 15px;
+		color: white;
+		
+		h3{
+			font-family: $sans;
+		}
+	}
+
+	.icon{
+		display: inline-block;
+		height: 200px;
+		width: 100%;
+	}
+	.fact{
+		margin-bottom: 30px;
+		display: inline-block;		
+	}
+}
+
+.testimonials-section{
+	background-color: $beige;
+	position: relative;
+	border-top:2px solid $dark-grey;
+	border-bottom:2px solid $dark-grey;
+	h3{
+		text-align: center;
+		color: $teal;
+		font-family: $sans;
+		font-weight: bold;
+		margin-top: 60px;
+		text-transform: uppercase;
+	}
+	.divider{
+		display: inline-block;
+		background-color: $dark-grey;
+		width: 60px;
+		height: 3px;
+		margin:30px 0px 30px 0px;
+		position: relative;
+		@include horizontal-center;
+	}
+	.testimonials-slider{
+		margin-bottom: 60px;
+	}
+	.testimonial{
+		.quote{
+			font-size: 30px;
+			text-align: center;
+
+		}
+		.name{
+			text-align: center;
+			p, span{font-family: $sans;}
+		}
+	}
+
+	.slick-prev, .slick-next{
+		position: absolute;
+		@include vertical-center;
+		font-size: 25px;
+		color: $dark-grey;
+		height: 100px;
+	}
+	.slick-prev{
+		left:-30px;
+	}
+	.slick-next{
+		right:-30px;
+	}
+}
+
+.main-section:last-of-type{
+	padding:60px 0px 60px 0px;
+	p{
+		font-size: 25px;
+		color: $dark-grey;
+		text-align: center;
 	}
 }

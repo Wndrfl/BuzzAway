@@ -141,57 +141,84 @@
 			<div class="product-variations">
 				<div class="container">
 					<?php foreach ($product['variations'] as $variation): 
-						$size  = $product['size'];
-						$price = $product['price'];
-						$image = $product['image'];
-						$name  = $product['name'];
+						$size  = $variation['size'];
+						$price = $variation['price'];
+						$image = $variation['image'];
+						$name  = $variation['name'];
 						?>
-
-						<div class="variation">
-							<div class="variation-image"></div>
-							<p class="variation-size"><?php echo $size ?></p>
-							<p class="variation-price">MSRP <?php echo $price ?></p>
-							<p>(prices vary online)</p>
-							<span class="divider"></span>
-							<h3 class="variation-name"><?php echo $name ?></h3>
+						<div class="col-sm-4">
+							<div class="variation">
+								<div class="col-xs-6">									
+									<div class="variation-image" style="background-image:url(<?php echo $image ?>);"></div>
+								</div>
+								<div class="col-xs-6">
+									<p class="variation-size"><?php echo $size ?></p>
+									<p class="variation-price">MSRP <?php echo $price ?><span>(prices vary online)</span></p>
+									<span class="divider"></span>
+									<h3 class="variation-name"><?php echo $name ?></h3>
+								</div>
+								<a href="" class="button teal-button shop-now">Shop Now</a>
+							</div>
 						</div>
-
 					<?php endforeach ?>
 				</div>
 			</div>
 		</div>
 	<?php endforeach ?><!--end foreach product -->
-	
 </section>
 
-<section class="main-section">
+<section class="main-section has-shadow">
+	<div class="top-shadow"></div>
 	<div class="container">
-		<h3><strong>Buzz Away Extreme</strong> is a natural insect repellent designed to combat mosquitos and ticks, while helping prevent bug borne diseases. It’s a fast acting, quickly applied, and healthy alternative to help you stay safe outside.</h3>
+		<h3><strong>Buzz Away Extreme</strong> is a natural insect repellent designed to combat mosquitos and ticks, while helping prevent bug borne diseases. It's a fast acting, quickly applied, and healthy alternative to help you stay safe outside.</h3>
 	</div>
+	<div class="bottom-shadow"></div>
 </section>
 
-<section class="main-section">
+<section class="main-section data-section">
 	<div class="container">
-		<h3>Studies by the USDA and the University of Guelph concluded that Buzz Away Extreme:</h3>
-		<div class="fact">
-			<span class="data-icon icon" style="background-image:url(/img/data-icon-1);"></span>
-			<p>Delivered an average mean protection time (against three species of mosquitoes) of 7.2 hours.</p>
+
+		<div class="title-container">
+			<h3>Studies by the USDA and the University of Guelph concluded that Buzz Away Extreme:</h3>
 		</div>
-		<div class="fact">
-			<span class="data-icon icon" style="background-image:url(/img/data-icon-2);"></span>
-			<p>Is as effective as 7% to 20% DEET-based products.</p>
+		
+		<div class="col-xs-6">
+			<div class="fact">
+				<div class="col-xs-4">
+					<span class="data-icon icon" style="background-image:url(/img/data-icon-1);"></span>
+				</div>
+				
+				<div class="col-xs-8">
+					<p>Delivered an average mean protection time (against three species of mosquitoes) of 7.2 hours.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-xs-6">
+			<div class="fact">
+				<div class="col-xs-4"><span class="data-icon icon col-xs-3" style="background-image:url(/img/data-icon-2);"></span></div>
+				<div class="col-xs-8"><p class="col-xs-9">Is as effective as 7% to 20% DEET-based products.</p></div>
+			</div>
 		</div>
 		<a href="" class="button green-button">Find A Store</a>
 	</div>
 </section>
 
-<section class="main-section">
-	<h3>What Do Our Customers Say?</h3>
-	<?php include('testimonials.php') ?>
+<section class="main-section testimonials-section">
+	<div class="top-shadow"></div>
+	<div class="container">
+		<h3>What Do Our Customers Say?</h3>
+		<div class="divider"></div>
+
+		<?php include('testimonials.php') ?>
+	</div>
+	<div class="bottom-shadow"></div>
 </section>
 
 <section class="main-section">
-	<p>BUZZ AWAY EXTREME SPRAY AND TOWELETTES ARE AVAILABLE IN NATURAL GROCERY, HEALTH FOOD AND SUPPLEMENT STORES EVERYWHERE!</p>
+	<div class="container">
+		<p>BUZZ AWAY EXTREME SPRAY AND TOWELETTES ARE AVAILABLE IN NATURAL GROCERY, HEALTH FOOD AND SUPPLEMENT STORES EVERYWHERE!</p>
+	</div>
 </section>
 
 <?php include('shop-now.php') ?>
