@@ -949,14 +949,25 @@ p{
 	}
 	.fact{
 		margin-bottom: 30px;
-		display: inline-block;		
+		display: inline-block;
+		position: relative;
+		height:220px;
+		width: 100%;
+		.col-sm-8{
+			position: relative;
+		}
 	}
 	.fact-text{
 		text-align: center;
 		padding-top:30px;
+		font-family: $sans;
+		color:$dark-grey;
+		position: relative;
 
 		@include breakpoint(tablet-screen){
 			text-align: left;
+			position: relative;
+			top: 30px;
 		}
 	}
 	.data-cta{

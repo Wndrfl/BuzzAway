@@ -911,13 +911,23 @@ p {
     width: 100%; }
   .data-section .fact {
     margin-bottom: 30px;
-    display: inline-block; }
+    display: inline-block;
+    position: relative;
+    height: 220px;
+    width: 100%; }
+    .data-section .fact .col-sm-8 {
+      position: relative; }
   .data-section .fact-text {
     text-align: center;
-    padding-top: 30px; }
+    padding-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    color: #716967;
+    position: relative; }
     @media (min-width: 768px) {
       .data-section .fact-text {
-        text-align: left; } }
+        text-align: left;
+        position: relative;
+        top: 30px; } }
   .data-section .data-cta {
     display: block;
     margin: 0 auto; }
