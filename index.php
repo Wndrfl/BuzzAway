@@ -12,7 +12,7 @@
 
 			<div class="hero-headline">
 
-				<h1><div class="blur"></div><span>A Naturally Effective Way to Protect from Insects</span></h1>
+				<h1><div class="blur"></div><span>A Naturally Effective Way<br>to Protect from Insects</span></h1>
 				<div class="hero-text">
 					<div class="col-xs-6">
 						<span class="icon col-xs-4" style="background-image:url(/img/hero-icon-1.png);"></span>
@@ -115,7 +115,13 @@
 			<div class="product">
 				<div class="container">
 
-					<div class="product-image col-xs-12 col-md-4" style="background-image:url(<?php echo $main_image ?>)"></div>
+					<div class="col-xs-12 col-md-4 product-image-container">
+						<div class="product-image-inner-container">
+							<div class="product-image" style="background-image:url(<?php echo $main_image ?>)"></div>
+						</div>
+							
+					</div>
+					
 					<div class="col-md-8">
 						<p class="desc"><?php echo $desc ?></p>
 						<ul class="product-specs">
@@ -182,25 +188,25 @@
 			<h3>Studies by the USDA and the University of Guelph concluded that Buzz Away Extreme:</h3>
 		</div>
 		
-		<div class="col-xs-6">
+		<div class="col-xs-12 col-sm-6">
 			<div class="fact">
-				<div class="col-xs-4">
+				<div class="col-xs-12 col-sm-4">
 					<span class="data-icon icon" style="background-image:url(/img/data-icon-1);"></span>
 				</div>
 				
-				<div class="col-xs-8">
-					<p>Delivered an average mean protection time (against three species of mosquitoes) of 7.2 hours.</p>
+				<div class="col-xs-12 col-sm-8">
+					<p class="fact-text">Delivered an average mean protection time (against three species of mosquitoes) of 7.2 hours.</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="col-xs-6">
+		<div class="col-xs-12 col-sm-6">
 			<div class="fact">
-				<div class="col-xs-4"><span class="data-icon icon col-xs-3" style="background-image:url(/img/data-icon-2);"></span></div>
-				<div class="col-xs-8"><p class="col-xs-9">Is as effective as 7% to 20% DEET-based products.</p></div>
+				<div class="col-xs-12 col-sm-4"><span class="data-icon icon col-xs-3" style="background-image:url(/img/data-icon-2);"></span></div>
+				<div class="col-xs-12 col-sm-8"><p class="fact-text">Is as effective as 7% to 20% DEET-based products.</p></div>
 			</div>
 		</div>
-		<a href="" class="button green-button">Find A Store</a>
+		<div class="data-cta"><a href="" class="button green-button">Find A Store</a></div>
 	</div>
 </section>
 
