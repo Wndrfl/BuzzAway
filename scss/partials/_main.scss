@@ -882,7 +882,16 @@ p{
 		}
 	}
 }
-
+.buzz-away-extreme-towelettes.active{
+	.variation{
+		.variation-image{
+			width: 150px;
+		}
+		.variation-name{
+			font-size: 18px;
+		}
+	}
+}
 .main-section.has-shadow{
 	background-color: $beige;
 	display: block;

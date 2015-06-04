@@ -835,6 +835,12 @@ p {
           -o-transform: translateX(-50%);
           transform: translateX(-50%); } }
 
+.buzz-away-extreme-towelettes.active .variation .variation-image {
+  width: 150px; }
+
+.buzz-away-extreme-towelettes.active .variation .variation-name {
+  font-size: 18px; }
+
 .main-section.has-shadow {
   background-color: #FAF7F2;
   display: block;
