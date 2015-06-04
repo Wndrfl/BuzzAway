@@ -15,14 +15,14 @@
 				<h1><div class="blur"></div><span>A Naturally Effective Way<br>to Protect from Insects</span></h1>
 				<div class="hero-text">
 					<div class="col-xs-6">
-						<span class="icon col-xs-4" style="background-image:url(/img/hero-icon-1.png);"></span>
-						<div class="col-xs-8">
+						<span class="icon col-xs-12 col-sm-4" style="background-image:url(/img/hero-icon-1.png);"></span>
+						<div class="col-xs-12 col-sm-8">
 							<p>Natural Botanical Formula that is completely DEET-free</p>
 						</div>
 					</div>
 					<div class="col-xs-6">
-						<span class="icon col-xs-4" style="background-image:url(/img/hero-icon-2.png);"></span>
-						<div class="col-xs-8">
+						<span class="icon col-xs-12 col-sm-4" style="background-image:url(/img/hero-icon-2.png);"></span>
+						<div class="col-xs-12 col-sm-8">
 							<p>Available in Spray or Towelettes for Easy Application</p>
 						</div>
 						
