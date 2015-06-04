@@ -645,6 +645,15 @@ p{
 				width: 90%;
 
 				h2{font-size: 17px;}
+
+				.shop-now{
+					cursor: pointer;
+					opacity: .8;
+					
+					&:hover{
+						opacity:1;
+					}
+				}
 			}
 			.shadow{
 				display: none;

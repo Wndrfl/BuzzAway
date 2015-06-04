@@ -4,7 +4,7 @@
 	background-color: rgba(0,0,0,.7);
 	display: block;
 	opacity: 0;
-	@include transition(all 1s ease-in-out);
+	@include transition(all .6s ease-in-out);
 
 	&.active{
 		top: 0; bottom:0;
@@ -68,7 +68,7 @@
 }
 
 #shop-now-modal{
-
+	height:auto;
 }
 
 #find-a-store-modal{

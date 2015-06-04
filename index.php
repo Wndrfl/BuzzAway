@@ -95,7 +95,7 @@
 				<div class="product-toggle col-xs-6" id="<?php echo $id ?>">
 					<div class="product-toggle-content">
 						<h2><?php echo $title ?></h2>
-						<p>Shop Now</p>
+						<p class="shop-now">Shop Now</p>
 					</div>
 					<div class="shadow"></div>
 					<span class="arrow"></span>
@@ -137,7 +137,7 @@
 							?>
 								<a class="where-to-buy-logo" href="<?php echo $store['link'] ?>" style="background-image:url(<?php echo $logo ?>);"></a>
 							<?php endforeach ?>
-							<a href="" class="button green-button pull-right">Find A Store</a>
+							<a href="" class="button green-button pull-right find-a-store">Find A Store</a>
 						</div>
 					</div>
 					
@@ -208,7 +208,7 @@
 				<div class="col-xs-12 col-sm-8"><p class="fact-text">Is as effective as 7% to 20% DEET-based products.</p></div>
 			</div>
 		</div>
-		<div class="data-cta"><a href="" class="button green-button">Find A Store</a></div>
+		<div class="data-cta"><a href="" class="button green-button find-a-store">Find A Store</a></div>
 	</div>
 </section>
 

@@ -624,6 +624,11 @@ p {
         width: 90%; }
         .main-section-product .product-toggle-container .product-toggle .product-toggle-content h2 {
           font-size: 17px; }
+        .main-section-product .product-toggle-container .product-toggle .product-toggle-content .shop-now {
+          cursor: pointer;
+          opacity: .8; }
+          .main-section-product .product-toggle-container .product-toggle .product-toggle-content .shop-now:hover {
+            opacity: 1; }
       .main-section-product .product-toggle-container .product-toggle .shadow {
         display: none;
         position: absolute;
@@ -1028,11 +1033,11 @@ p {
   background-color: rgba(0, 0, 0, 0.7);
   display: block;
   opacity: 0;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out; }
   .modal-overlay.active {
     top: 0;
     bottom: 0;
@@ -1091,6 +1096,9 @@ p {
     background-position: center center; }
   .modal .button {
     margin-top: 30px; }
+
+#shop-now-modal {
+  height: auto; }
 
 #find-a-store-modal .find-a-store-right,
 #find-a-store-modal .find-a-store-left {
