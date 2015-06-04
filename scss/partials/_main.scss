@@ -202,10 +202,10 @@ p{
 			border:1px solid;
 			position: relative;
 			overflow: hidden;
-			background-image:url(/img/hero-image.png);
+			background-image:url(/img/hero-image-blurred.png);
 			margin:0px;
-			background-size: 1400px;
-			background-position: right;
+			background-size: 1326px;
+			background-position: -529px -154px;
 			font-size: 28px;
 			@include breakpoint(tablet-screen){
 				font-size: 38px;
