@@ -2,41 +2,36 @@
 	position: fixed;
 	background-color: rgba(0,0,0,.7);
 	display: block;
-	/*visibility:hidden;*/
-	opacity: 0;
-	z-index: -15;
+	display: none;
+	top: 0; bottom:0;
+	left:0; right:0;
+	height: 100%;
+	width: 100%;
+	z-index: 15;
+	/*opacity: 0;*/
+	/*z-index: -15;*/
 	/*top:-1000px;*/
-	@include transition(all .6s ease-in-out);
+	/*@include transition(all .6s ease-in-out);*/
 
 	&.active{
-		top: 0; bottom:0;
-		left:0; right:0;
-		height: 100%;
-		width: 100%;
-		opacity: 1;
-		/*visibility:visible;*/
-		z-index: 15;
-
+		/*opacity: 1;*/
+		display: block;
 	}
 }
 
 .modal{
-	position: absolute;
 	height:auto;
 	width: 90%;
-	/*top:-10000px;*/
 	overflow: auto;
 	background-color: white;
-	z-index: -16;
-	/*visibility:hidden;*/
-	opacity: 0;
+	/*opacity: 0;*/
 	padding:15px;
 	border:5px solid $green;
 	text-align: center;
 	position: fixed;
+	display: none;
+	z-index: 16;
 	@include center-center;
-	@include transition(all .4s ease-in-out);
-
 	-webkit-overflow-scrolling: touch;
 		-ms-overflow-scrolling: touch;
 			-o-overflow-scrolling: touch;
@@ -46,15 +41,12 @@
 		padding:60px;
 		height:50%;
 		width: 80%;
-		
-		
 	}
 
 	&.active{
-		/*visibility:visible;*/
-		opacity: 1;
+		/*opacity: 1;*/
+		display: block;
 		
-		z-index: 16;
 	}
 	.modal-close{
 		position: absolute;
@@ -63,8 +55,6 @@
 		background-color: transparent;
 		height: 30px;
 		width: 30px;
-		/*@include border-radius(25px);
-		border:2px solid black;*/
 		span{
 			position: absolute;
 			@include center-center;
