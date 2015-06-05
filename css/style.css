@@ -1432,11 +1432,13 @@ p {
   top: 10px;
   overflow: auto;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
+  top: 50%;
+  margin: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: white;
   z-index: 16;
   visibility: hidden;
@@ -1453,16 +1455,7 @@ p {
     .modal {
       padding: 60px;
       height: 50%;
-      width: 80%;
-      position: fixed;
-      left: 50%;
-      top: 50%;
-      margin: auto;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); } }
+      width: 80%; } }
   .modal.active {
     visibility: visible;
     opacity: 1; }
@@ -1490,25 +1483,26 @@ p {
         margin-top: 30px;
         margin-bottom: 30px; } }
   .modal .retailer {
-    margin-top: 15px;
     margin-bottom: 15px; }
     .modal .retailer .retailer-logo-container {
+      margin-top: 15px;
       border: 1px solid black;
       width: 100%;
       padding: 0px;
-      padding-top: 30px;
-      padding-bottom: 30px; }
+      padding-top: 15px;
+      padding-bottom: 15px; }
       @media (min-width: 768px) {
         .modal .retailer .retailer-logo-container {
           padding: 30px; } }
     .modal .retailer .retailer-logo {
       display: inline-block;
-      height: 60px;
+      height: 30px;
       width: 80%;
       background-position: center center; }
       @media (min-width: 768px) {
         .modal .retailer .retailer-logo {
-          width: 100%; } }
+          width: 100%;
+          height: 60px; } }
   .modal .button {
     margin-top: -30px;
     opacity: 1;
@@ -1522,7 +1516,7 @@ p {
   height: auto; }
 
 #find-a-store-modal {
-  height: auto; }
+  height: 480px; }
   #find-a-store-modal p {
     color: #716967;
     font-family: "Open Sans", sans-serif;
