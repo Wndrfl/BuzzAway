@@ -1,17 +1,17 @@
 $(function(){
 
-	$(window).resize(function(){
+	// $(window).resize(function(){
 
-	    $('.modal.active').css({
-	        position:'absolute',
-	        left: ($(window).width() - $('.className').outerWidth())/2,
-	        top: ($(window).height() - $('.className').outerHeight())/2
-	    });
+	//     $('.modal.active').css({
+	//         position:'absolute',
+	//         left: ($(window).width() - $('.className').outerWidth())/2,
+	//         top: ($(window).height() - $('.className').outerHeight())/2
+	//     });
 
-	});
+	// });
 
-	// To initially run the function:
-	$(window).resize();
+	// // To initially run the function:
+	// $(window).resize();
 
 
 	////////////////////////////////
@@ -32,6 +32,12 @@ $(function(){
 	});
 
 	$('.modal-overlay').click(function(e){
+		e.preventDefault();
+		$('.modal').removeClass('active');
+		$('.modal-overlay').removeClass('active');
+	});
+
+	$('.modal-close').click(function(e){
 		e.preventDefault();
 		$('.modal').removeClass('active');
 		$('.modal-overlay').removeClass('active');

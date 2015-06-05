@@ -1138,7 +1138,8 @@ p {
       text-align: center;
       font-size: 16px;
       margin-top: 35px;
-      position: relative; }
+      position: relative;
+      opacity: 1; }
       @media (min-width: 768px) {
         .main-section-product .product-variations .shop-now {
           width: initial;
@@ -1459,6 +1460,27 @@ p {
   .modal.active {
     visibility: visible;
     opacity: 1; }
+  .modal .modal-close {
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    /*@include border-radius(25px);
+		border:2px solid black;*/ }
+    .modal .modal-close span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: auto;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-size: 21px; }
   .modal h3 {
     color: #00AA97;
     font-size: 18px; }

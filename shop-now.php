@@ -19,6 +19,7 @@
 ?>
 
 <div id="shop-now-modal" class="modal">
+	<div class="modal-close"><span class="fa fa-close"></span></div>
 	<div class="wrapper">
 		<h3>Buy Buzz Away Extreme online at these,<br>and many other fine online retailers</h3>
 		<span class="divider"></span>

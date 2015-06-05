@@ -45,6 +45,21 @@
 		visibility:visible;
 		opacity: 1;
 	}
+	.modal-close{
+		position: absolute;
+		display: inline-block;
+		top: 0px; right:0px;
+		background-color: white;
+		height: 50px;
+		width: 50px;
+		/*@include border-radius(25px);
+		border:2px solid black;*/
+		span{
+			position: absolute;
+			@include center-center;
+			font-size: 21px;
+		}
+	}
 	h3{
 		color:$teal;
 		font-size: 18px;
