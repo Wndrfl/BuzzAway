@@ -15,7 +15,7 @@ $hero_prod_info = array(
 	),
 	array(
 		'icon' => '/img/hero-prod-icon-4.png',
-		'text' => 'All-Natural Formula'
+		'text' => 'All-Natural Formula<br>DEET-free'
 	)
 );
 
@@ -81,16 +81,16 @@ $products = array(
 		),
 		'variations' => array(
 			array(
-				'size' => '12 Count',
-				'price' => '$8.99',
-				'name' => 'Buzz Away Extreme Towelettes, 12 ct.',
-				'image' => '/img/buzz-away-extreme-towelettes-12ct.png'
-			),
-			array(
 				'size' => '25 Count',
 				'price' => '$9.99',
 				'name' => 'Buzz Away Extreme Pop Up Towelettes, 25 ct.',
 				'image' => '/img/buzz-away-extreme-towelettes-25ct.png'
+			),
+			array(
+				'size' => '12 Count',
+				'price' => '$8.99',
+				'name' => 'Buzz Away Extreme Towelettes, 12 ct.',
+				'image' => '/img/buzz-away-extreme-towelettes-12ct.png'
 			)
 		)
 	)

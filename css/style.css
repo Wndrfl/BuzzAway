@@ -16,7 +16,7 @@ body {
 a {
   text-decoration: none;
   color: white; }
-  a:hover, a:focus, a:active {
+  a:hover, a:focus, a:active, a:visited {
     text-decoration: none !important;
     border: none;
     color: white; }
@@ -1425,22 +1425,22 @@ p {
     z-index: 15; }
 
 .modal {
-  position: fixed;
-  height: 50%;
-  width: 80%;
+  position: absolute;
+  height: auto;
+  width: 90%;
+  top: 10px;
+  overflow: auto;
   left: 50%;
-  top: 50%;
-  margin: auto;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
   background-color: white;
   z-index: 16;
   visibility: hidden;
   opacity: 0;
-  padding: 30px;
+  padding: 15px;
   border: 5px solid #9BD100;
   text-align: center;
   -webkit-transition: opacity 0.4s ease-in-out;
@@ -1450,7 +1450,18 @@ p {
   transition: opacity 0.4s ease-in-out; }
   @media (min-width: 768px) {
     .modal {
-      padding: 60px; } }
+      padding: 60px;
+      height: 50%;
+      width: 80%;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      margin: auto;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); } }
   .modal.active {
     visibility: visible;
     opacity: 1; }
@@ -1510,7 +1521,12 @@ p {
   height: auto; }
 
 #find-a-store-modal {
-  height: 80%; }
+  height: auto; }
+  #find-a-store-modal p {
+    color: #716967;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    margin-top: 15px; }
   @media (min-width: 992px) {
     #find-a-store-modal {
       height: 60%;
@@ -1521,6 +1537,6 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    height: 100%;
+    top: 0px;
+    height: 75%;
     width: 100%; }

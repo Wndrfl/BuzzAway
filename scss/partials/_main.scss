@@ -16,12 +16,13 @@ a{
 	text-decoration: none;
 	color:white;
 
-	&:hover, &:focus, &:active{
+	&:hover, &:focus, &:active, &:visited{
 		text-decoration:none !important;
 		border:none;
 		color: white;
 	}
 }
+
 h3{
 	font-size: 25px;
 	@include breakpoint(tablet-screen){

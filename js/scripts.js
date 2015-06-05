@@ -70,8 +70,8 @@ $(function(){
 
 	$('.testimonials-slider').slick({
 		infinite:true,
-		autoPlay:true,
-		autoPlaySpeed:2000,
+		autoplay:true,
+		autoplaySpeed:5000,
 		prevArrow:'<a type="button" class="slick-prev"><span class="fa fa-chevron-left"></span></a>',
 		nextArrow:'<a type="button" class="slick-next"><span class="fa fa-chevron-right"></span></a>'
 	});

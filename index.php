@@ -135,6 +135,7 @@
 						</ul>
 						<div class="where-to-buy">
 							<p>Where to Buy:</p>
+							<p class="available">BUZZ AWAY EXTREME IS AVAILABLE IN HEALTH FOOD STORES AND NATURAL GROCERS EVERYWHERE. CLICK THE FIND STORE ICON TO SEE MORE STORES, OR CALL YOU'RE LOCAL STORE TO CHECK STOCK.</p>
 							<?php foreach($product['stores'] as $store) :
 								$logo = $store['logo'];
 
@@ -142,7 +143,7 @@
 								<a class="where-to-buy-logo" href="<?php echo $store['link'] ?>" style="background-image:url(<?php echo $logo ?>);"></a>
 							<?php endforeach ?>
 							<a href="" class="button green-button pull-right find-a-store">Find A Store</a>
-							<p class="available">Buzz Away Extreme is available in health food stores and natural grocers everywhere. Call you're local store to check stock.</p>
+							
 						</div>
 					</div>
 					
