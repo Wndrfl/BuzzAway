@@ -370,7 +370,8 @@ p {
       position: relative;
       display: inline-block;
       width: 100%;
-      font-size: 0; }
+      font-size: 0;
+      z-index: 3; }
       @media (min-width: 768px) {
         .main-section-hero .hero-bottom-banner .hero-ctas {
           width: auto;
@@ -1466,8 +1467,8 @@ p {
     top: 0px;
     right: 0px;
     background-color: transparent;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     /*@include border-radius(25px);
 		border:2px solid black;*/ }
     .modal .modal-close span {
@@ -1481,6 +1482,10 @@ p {
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       font-size: 21px; }
+    @media (min-width: 768px) {
+      .modal .modal-close {
+        height: 50px;
+        width: 50px; } }
   .modal h3 {
     color: #00AA97;
     font-size: 18px; }

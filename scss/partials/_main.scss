@@ -376,7 +376,7 @@ p{
 			display: inline-block;
 			width: 100%;
 			font-size:0;
-
+			z-index: 3;
 			@include breakpoint(tablet-screen){
 				width:auto;
 				position: absolute;
