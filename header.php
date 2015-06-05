@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Buzz Away</title>
+	<title>Buzz Away Extreme Natural Mosquito &amp; Tick Repellent</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -10,7 +10,9 @@
 	<link href="/img/favicon.png" rel="shortcut icon">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
+	<meta name="description" content="Buzz Away Extreme is an insect repellent that uses natural ingredients to help prevent bug borne diseases over an extended period of time">
+	<meta name="keywords" content="Mosquito repellent, tick repellent, insect repellent, natural insect repellent, bug spray, natural bug spray, mosquitos, ticks, Lyme disease, insect repellent wipe, long lasting insect repellent, avoid insect bites, best insect repellent">
+	
 </head>
 <body>
 

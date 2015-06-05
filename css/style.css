@@ -793,7 +793,8 @@ p {
         .main-section-product .product-toggle-container .product-toggle .product-toggle-content .shop-now {
           font-size: 14px;
           cursor: pointer;
-          opacity: .8; }
+          opacity: .8;
+          display: inline-block; }
           .main-section-product .product-toggle-container .product-toggle .product-toggle-content .shop-now:hover {
             opacity: 1; }
           @media (min-width: 1200px) {
@@ -1425,7 +1426,7 @@ p {
     z-index: 15; }
 
 .modal {
-  position: absolute;
+  position: fixed;
   height: auto;
   width: 90%;
   top: 10px;

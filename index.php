@@ -100,7 +100,7 @@
 				<div class="product-toggle col-xs-6" id="<?php echo $id ?>">
 					<div class="product-toggle-content">
 						<h2><?php echo $title ?></h2>
-						<p>Shop Now</p>
+						<p class="shop-now">Shop Now</p>
 					</div>
 					<div class="shadow"></div>
 					<span class="arrow"></span>
@@ -142,7 +142,7 @@
 							?>
 								<a class="where-to-buy-logo" href="<?php echo $store['link'] ?>" style="background-image:url(<?php echo $logo ?>);"></a>
 							<?php endforeach ?>
-							<a href="" class="button green-button pull-right find-a-store">Find A Store</a>
+							<a href="#" class="button green-button pull-right find-a-store">Find A Store</a>
 							
 						</div>
 					</div>
@@ -174,7 +174,8 @@
 									<span class="divider"></span>
 									<h3 class="variation-name"><?php echo $name ?></h3>
 								</div>
-								<div class="col-xs-12"><a href="" class="button teal-button shop-now">Shop Now</a></div>
+
+								<div class="col-xs-12"><a href="#" class="button teal-button shop-now">Shop Now</a></div>
 							</div>
 						</div>
 					<?php endforeach ?>
