@@ -3,13 +3,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Quantum Store Locator - Buzz Away Extreme Results</title>
+<title>Buzz Away Extreme | Store Locator</title>
 
 <!-- GOOGLE FONTS -->
 <link rel='stylesheet' id='fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%2C600&#038;ver=1.0' media='all' />
 
 <script type="text/javascript" src="/scripts4/util-functions.js"></script>
 <script type="text/javascript" src="/scripts4/clear-default-text.js"></script>
+
 </head>
 <body>
 
@@ -125,7 +126,7 @@
 	}
 	</style>
 
-	<form BOTID="0" METHOD="POST" ACTION="Lipclear_Results2_LGW.asp">
+	<form BOTID="0" METHOD="POST" ACTION="BuzzAway_Results2_A.asp">
 		<div class="search-table">
 			<div class="search-desc">
 

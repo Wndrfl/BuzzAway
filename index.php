@@ -100,7 +100,7 @@
 				<div class="product-toggle col-xs-6" id="<?php echo $id ?>">
 					<div class="product-toggle-content">
 						<h2><?php echo $title ?></h2>
-						<p class="shop-now">Shop Now</p>
+						<p>Shop Now</p>
 					</div>
 					<div class="shadow"></div>
 					<span class="arrow"></span>
@@ -156,14 +156,16 @@
 						$image = $variation['image'];
 						$name  = $variation['name'];
 						?>
-						<div class="col-sm-4">
+						<div class="col-xs-12 col-md-4">
 							<div class="variation">
-								<div class="col-xs-12 col-md-5">
+
+								<div class="col-xs-5">
 									<div class="variation-image-container">
 										<div class="variation-image" style="background-image:url(<?php echo $image ?>);"></div>
 									</div>									
 								</div>
-								<div class="col-xs-12 col-md-7 variation-details">
+
+								<div class="col-xs-7 variation-details">
 									<p class="variation-size"><?php echo $size ?></p>
 									<p class="variation-price">MSRP <?php echo $price ?><span>(prices vary online)</span></p>
 									<span class="divider"></span>

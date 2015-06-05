@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Quantum Store Locator - Lip Clear Results</title>
+ <title>Buzz Away Extreme | Store Locator</title>
 
 <!-- GOOGLE FONTS -->
 <link rel='stylesheet' id='fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%2C600&#038;ver=1.0' media='all' />
@@ -142,9 +142,9 @@
 
 	<div class="search-table">
 		<div class="search-desc">
-			<form BOTID="0" METHOD="POST" ACTION="Lipclear_Results2_LGW.asp">
+			<form BOTID="0" METHOD="POST" ACTION="BuzzAway_Results_A.asp">
 
-				<img src="http://www.quantumhealth.com/images/LipClear_7gm_194x250.gif" />
+				<img src="/img/product.png" />
 
 				<p class="three">
 					Type the first <strong>FOUR</strong> digits of your zip for more locations.<br />
@@ -248,6 +248,6 @@
 		<div style="clear:both;"></div>
 	</div>
 	<!-- STOP -->
-	
+
 </body>
 </html>

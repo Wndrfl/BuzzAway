@@ -1,6 +1,24 @@
 $(function(){
 
 	////////////////////////////////
+	// STICKY HEADER //////////////
+	//////////////////////////////
+	/////////////////////////////
+
+	$(window).scroll(function(){
+	  var sticky = $('.main-header'),
+	      scroll = $(window).scrollTop();
+
+	  if (scroll >= 100){
+	  	// sticky.animate({
+	  	// 	position: fixed
+	  	// }, 1000);
+	  	sticky.addClass('fixed')
+
+	  } else { sticky.removeClass('fixed')};
+	});
+
+	////////////////////////////////
 	// MODALS /////////////////////
 	//////////////////////////////
 	/////////////////////////////
