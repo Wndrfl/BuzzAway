@@ -89,23 +89,23 @@ p {
   display: none; }
 
 .main-header {
-  height: 200px;
-  position: relative; }
+  height: 140px;
+  background-color: white;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .main-header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; }
   @media (min-width: 768px) {
     .main-header {
-      height: 100px;
-      background-color: white;
-      -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      -ms-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out; }
-      .main-header.fixed {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 10; } }
+      height: 100px; } }
   @media (min-width: 768px) {
     .main-header .container {
       position: relative; } }
@@ -165,8 +165,8 @@ p {
       padding: 0px;
       float: left;
       display: inline;
-      height: 100px;
-      line-height: 100px;
+      height: 40px;
+      line-height: 40px;
       text-align: center;
       width: 33.33%;
       font-size: 14px; }
@@ -859,7 +859,7 @@ p {
         float: left;
         position: relative;
         top: -34px;
-        height: 555px;
+        height: 600px;
         border-bottom: none;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px; } }
@@ -938,6 +938,10 @@ p {
       font-family: "Open Sans", sans-serif;
       margin-top: 30px;
       margin-bottom: 15px; }
+    .main-section-product .product .where-to-buy .available {
+      color: #716967;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px; }
     .main-section-product .product .where-to-buy .where-to-buy-logo {
       height: 60px;
       width: 160px;
@@ -987,9 +991,12 @@ p {
     padding-bottom: 30px; }
     @media (min-width: 992px) {
       .main-section-product .product-variations {
-        margin-top: -70px; } }
+        margin-top: -64px; } }
+    @media (min-width: 1200px) {
+      .main-section-product .product-variations {
+        margin-top: -64px; } }
     @media (min-width: 992px) {
-      .main-section-product .product-variations .col-sm-4:first-of-type {
+      .main-section-product .product-variations .col-xs-12.col-md-4:first-of-type {
         padding-left: 0px; } }
     .main-section-product .product-variations .variation {
       border: 2px solid #716967;

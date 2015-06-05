@@ -84,18 +84,19 @@ p{
 	display: none;
 }
 .main-header{
-	height:200px;
+	height:140px;
+	background-color: white;
 	position: relative;
-
+	@include transition(all .2s ease-in-out);
+	&.fixed{
+		position: fixed;
+		top:0; left:0; right:0;
+		z-index: 10;
+	}
 	@include breakpoint(tablet-screen){
 		height:100px;
-		background-color: white;
-		@include transition(all .2s ease-in-out);
-		&.fixed{
-			position: fixed;
-			top:0; left:0; right:0;
-			z-index: 10;
-		}
+		
+		
 	}
 	.container{
 		@include breakpoint(tablet-screen){position: relative;}
@@ -146,8 +147,8 @@ p{
 			padding:0px;
 			float: left;
 			display: inline;
-			height:100px;
-			line-height: 100px;
+			height:40px;
+			line-height: 40px;
 			text-align: center;
 			width: 33.33%;
 			font-size: 14px;
@@ -875,7 +876,7 @@ p{
 				float: left;
 				position: relative;
 				top:-34px;
-				height:555px;
+				height:600px;
 				border-bottom: none;
 				border-bottom-left-radius: 0px;
 				border-bottom-right-radius: 0px;
@@ -962,6 +963,11 @@ p{
 				margin-top:30px;
 				margin-bottom: 15px;
 			}
+			.available{
+				color:$dark-grey;
+				font-family: $sans;
+				font-size: 14px;
+			}
 			.where-to-buy-logo{
 				height: 60px;
 				width: 160px;
@@ -1003,9 +1009,12 @@ p{
 		padding-bottom: 30px;
 
 		@include breakpoint(desktop-screen){
-			margin-top:-70px;
+			margin-top:-64px;
 		}
-		.col-sm-4:first-of-type{
+		@include breakpoint(large-desktop-screen){
+			margin-top: -64px;
+		}
+		.col-xs-12.col-md-4:first-of-type{
 			@include breakpoint(desktop-screen){
 				padding-left: 0px;
 			}

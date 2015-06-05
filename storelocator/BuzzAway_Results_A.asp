@@ -133,6 +133,7 @@
 				<img src="/img/product.png" />
 
 				<p class="three">
+					<u>Here is a partial list of Buzz Away retailers:</u><br>
 					Type the first <strong>FOUR</strong> digits of your zip for more locations.<br />
 					Type all <strong>FIVE</strong> for closest locations.<br />
 					<span style="font-size:12px;">We suggest you call the store in advance to check stock.</span>
