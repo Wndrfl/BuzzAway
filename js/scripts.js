@@ -5,36 +5,38 @@ $(function(){
 	//////////////////////////////
 	/////////////////////////////
 
-	$(window).scroll(function(){
-	  var sticky = $('.main-header'),
-	      scroll = $(window).scrollTop();
+	// $(window).scroll(function(){
+	//   var sticky = $('.main-header'),
+	//       scroll = $(window).scrollTop();
 
-	  if (scroll >= 150){
-	  	// sticky.animate({
-	  	// 	position: fixed
-	  	// }, 1000);
-	  	sticky.addClass('fixed')
+	//   if (scroll >= 150){
+	//   	// sticky.animate({
+	//   	// 	position: fixed
+	//   	// }, 1000);
+	//   	sticky.addClass('fixed')
 
-	  } else { sticky.removeClass('fixed')};
-	});
+	//   } else { sticky.removeClass('fixed')};
+	// });
 
 	////////////////////////////////
 	// MODALS /////////////////////
 	//////////////////////////////
 	/////////////////////////////
 
-	$('.shop-now').click(function(){
+	$('.shop-now').click(function(e){
+		e.preventDefault();
 		$('#shop-now-modal').addClass('active');
 		$('.modal-overlay').addClass('active');
 	});
 
-	$('.find-a-store').click(function(){
+	$('.find-a-store').click(function(e){
+		e.preventDefault();
 		$('#find-a-store-modal').addClass('active');
 		$('.modal-overlay').addClass('active');
 	});
 
-	$('.modal-overlay').click(function(){
-		console.log('modal');
+	$('.modal-overlay').click(function(e){
+		e.preventDefault();
 		$('.modal').removeClass('active');
 		$('.modal-overlay').removeClass('active');
 	});

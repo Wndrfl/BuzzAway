@@ -86,17 +86,15 @@ p{
 .main-header{
 	height:140px;
 	background-color: white;
-	position: relative;
+	position: fixed;
+	top:0; 
+	left:0; 
+	right:0;
+	z-index: 10;
 	@include transition(all .2s ease-in-out);
-	&.fixed{
-		position: fixed;
-		top:0; left:0; right:0;
-		z-index: 10;
-	}
+
 	@include breakpoint(tablet-screen){
-		height:100px;
-		
-		
+		height:100px;		
 	}
 	.container{
 		@include breakpoint(tablet-screen){position: relative;}
@@ -171,10 +169,12 @@ p{
 .main-section-hero{
 	background-image: url(/img/hero-image.png);
 	background-size: cover;
+	margin-top:140px;
 	@include transition(all .2s ease-in-out);
 
 	@include breakpoint(tablet-screen){
 		height: 600px;
+		margin-top:100px;
 		position: relative;
 	}
 	@include breakpoint(desktop-screen){
@@ -495,12 +495,15 @@ p{
 			display: inline-block;
 			position: relative;
 			width: 100%;
+			margin-bottom:20px;
 			
 			@include breakpoint(tablet-screen){
 				height:240px;
+				margin-bottom:0;
 			}
 			@include breakpoint(desktop-screen){
 				height:200px;
+				margin-bottom:0;
 			}
 
 			.hero-prod-detail-image-container{
@@ -526,7 +529,7 @@ p{
 
 				.hero-prod-detail-icon{
 					display: block;
-					height:230px;
+					height:100px;
 					width: 100%;
 					margin: 0 auto;
 
@@ -543,7 +546,7 @@ p{
 
 			.hero-prod-detail-text{
 				background-color: $dark-grey;
-				padding:25px;
+				padding:12px;
 				margin-top:15px;
 				margin-bottom: 15px;
 				@include border-radius(50px);
@@ -625,7 +628,7 @@ p{
 		@include breakpoint(tablet-screen){
 			padding:30px;
 			margin-top:30px;
-			margin-bottom: 60px;
+			margin-bottom: 90px;
 			height:245px;
 		}
 
@@ -633,10 +636,13 @@ p{
 
 			height:200px;
 		}
+
 		p{
-			font-size: 25px;
+			font-size: 16px;
 			color: $dark-grey;
 			font-weight: 300;
+			margin-bottom:20px;
+
 			@include breakpoint(tablet-screen){
 				font-size: 20px;
 			}
@@ -644,6 +650,7 @@ p{
 				font-size: 25px;
 			}
 		}
+
 		.corner{
 			position: absolute;
 			display: inline-block;
@@ -714,16 +721,19 @@ p{
 			}
 
 		}
+
 		.button{
 			@include border-radius(50px);
 			padding:15px 30px;
-			margin-top:15px;
-			margin-bottom: 15px;
+			margin-top:5px;
+			margin-bottom:5px;
 			opacity: 1;
 			font-size: 18px;
 			@include breakpoint(tablet-screen){
 				@include border-radius(10px);
 				padding:20px 40px;
+				margin-top:15px;
+				margin-bottom: 15px;
 			}
 			&.shop-now{
 				@include breakpoint(tablet-screen){
@@ -736,11 +746,15 @@ p{
 
 	.product-toggle-container{
 		display: block;
+		margin-bottom:30px;
 		position: relative;
+
 		@include breakpoint(tablet-screen){
 			float: right;
 			margin-top: 15px;
+			margin-bottom:0;
 		}
+
 		.product-toggle{
 			color:$dark-grey;
 			font-weight: bold;
@@ -748,9 +762,10 @@ p{
 			display: inline-block;
 			border:1px solid $dark-grey;
 			background-color: $beige;
-			height:150px;
+			height:120px;
 			text-align: center;
 			text-transform: uppercase;
+			cursor:pointer;
 			-webkit-border-top-left-radius: 15px;
 				-ms-border-top-left-radius: 15px;
 					border-top-left-radius: 15px;
@@ -779,8 +794,8 @@ p{
 				@include center-center;
 				width: 90%;
 
-				h2{
-					font-size: 17px;
+				h2 {
+					font-size: 14px;
 					@include breakpoint(tablet-screen){
 						font-size: 14px;
 					}
@@ -790,6 +805,7 @@ p{
 				}
 
 				.shop-now{
+					font-size: 14px;
 					cursor: pointer;
 					opacity: .8;
 
@@ -798,7 +814,6 @@ p{
 					}
 
 					@include breakpoint(tablet-screen){
-						font-size: 14px;
 					}
 					@include breakpoint(large-desktop-screen){
 						font-size: initial;
@@ -868,15 +883,15 @@ p{
 		}
 		.product-image-container{
 			display:block;
-			height: 300px;
-			margin-top:30px;
-			margin-bottom: 30px;
+			// margin-top:30px;
+			// margin-bottom: 30px;
 
-			@include breakpoint(tablet-screen){
+			@include breakpoint(desktop-screen){
 				display: inline-block;
+				height: 300px;
 				float: left;
 				position: relative;
-				top:-34px;
+				// top:-34px;
 				height:600px;
 				border-bottom: none;
 				border-bottom-left-radius: 0px;
@@ -887,14 +902,16 @@ p{
 		.product-image-inner-container{
 			border:2px solid $dark-grey;
 			@include border-radius(15px);
-			height: 100%;
+			margin-bottom:20px;
 
-			@include breakpoint(tablet-screen){
+			@include breakpoint(desktop-screen){
 				display: inline-block;
 				position: absolute;
 				top: 0; left: 0; bottom: 0; right: 15px;
+				height: 100%;
 				margin-right:0px;
 				margin-left: 0px;
+				margin-bottom:0;
 			}
 
 			@include breakpoint(desktop-screen){
@@ -909,10 +926,11 @@ p{
 			}
 
 			.product-image{
-				height: 96%;
+				height: 200px;
 				width: 100%;
-				@include breakpoint(tablet-screen){
+				@include breakpoint(desktop-screen){
 					margin-top:12px;
+					height: 96%;
 				}
 			}
 		}
@@ -920,23 +938,30 @@ p{
 		.desc{
 			font-family: $sans;
 			color:$dark-grey;
-			font-size: 16px;
+			font-size: 14px;
+
+			@include breakpoint(tablet-screen) {
+				font-size: 14px;
+			}
+
 			strong{
+				font-size:14px;
 				font-family: $sans;
 			}
 		}
+
 		.product-specs{
 			margin:20px 0px 20px 0px;
 			padding:20px 0px 0px 0px;
 			border-top:1px solid $grey;
 			border-bottom:1px solid $grey;
-			font-size: 16px;
+			font-size: 14px;
 			color:$dark-grey;
 			@include breakpoint(tablet-screen){
 				font-size: 14px;	
 			}
 			@include breakpoint(desktop-screen){
-				font-size: 16px;	
+				font-size: 14px;	
 			}
 			
 			li{
@@ -961,7 +986,7 @@ p{
 				font-weight: bold;
 				font-size: 14px;
 				font-family: $sans;
-				margin-top:30px;
+				margin-top:20px;
 				margin-bottom: 15px;
 			}
 			.available{
@@ -1010,24 +1035,30 @@ p{
 		padding-bottom: 30px;
 
 		@include breakpoint(desktop-screen){
-			margin-top:-64px;
+			// margin-top:-64px;
 		}
 		@include breakpoint(large-desktop-screen){
-			margin-top: -64px;
+			// margin-top: -64px;
 		}
+
 		.col-xs-12.col-md-4:first-of-type{
 			@include breakpoint(desktop-screen){
 				padding-left: 0px;
 			}
 			
 		}
+
+		.row {
+			margin:0;
+		}
+
 		.variation{
 			border:2px solid $dark-grey;
 			padding:15px;
 			background-color: white;
 			@include border-radius(10px);
 			font-family: $sans;
-			height:385px;
+			height:295px;
 			margin-top:15px;
 			margin-bottom:15px;
 
@@ -1067,7 +1098,7 @@ p{
 		}
 		.variation-image{
 			display: inline-block;
-			height: 200px;
+			height: 130px;
 			width: 100%;	
 			@include transition(all .2s ease-in-out);
 			@include breakpoint(tablet-screen){
@@ -1102,10 +1133,10 @@ p{
 		}
 		.variation-size{
 			color:$teal;
-			font-size: 27px;
+			font-size: 20px;
 			font-weight: bold;
 			@include breakpoint(tablet-screen){
-				
+				font-size: 27px;
 			}
 			@include breakpoint(desktop-screen){
 				font-size: 18px;
@@ -1140,7 +1171,7 @@ p{
 		.variation-name{
 			font-family: $sans;
 			font-weight: normal;
-			font-size: 23px;
+			font-size: 18px;
 			color:#333333;
 			@include breakpoint(tablet-screen){
 				font-size: 18px;
@@ -1156,9 +1187,8 @@ p{
 			width: 100%;
 			text-align: center;
 			font-size: 16px;
-			margin-top:15px;
+			margin-top:35px;
 			position: relative;
-			bottom: -50px;
 
 			@include breakpoint(tablet-screen){
 				width: initial;
@@ -1166,6 +1196,8 @@ p{
 				bottom:-40px;
 				font-size: 14px;
 				width: 100%;
+				margin-top:15px;
+				bottom: -50px;
 				@include horizontal-center;
 			}
 			@include breakpoint(desktop-screen){
@@ -1187,11 +1219,11 @@ p{
 }
 .buzz-away-extreme-towelettes.active{
 	.product-image{
-		height:80%;
-		position: absolute;
-		@include vertical-center;
-		@include breakpoint(tablet-screen){
+
+		@include breakpoint(desktop-screen){
 			height:60%;
+			position: absolute;
+			@include vertical-center;
 		}
 		@include breakpoint(large-desktop-screen){
 			height:80%;
@@ -1222,21 +1254,24 @@ p{
 .main-section.has-shadow{
 	background-color: $beige;
 	display: block;
-	height: 417px;
 	position: relative;
-	padding-top:30px;
-	@include breakpoint(tablet-screen){
-		height: 217px;
-	}
+	padding:30px 0;
+
 	h3{
-		position: absolute;
-		@include center-center;
+		// position: absolute;
+		// @include center-center;
+		font-size:18px;
 		text-align: center;
 		margin:0 auto;
 		width: 90%;
 		max-width: 1170px;
 		font-weight: 100;
 		color: $dark-grey;
+
+		@include breakpoint(tablet-screen) {
+			font-size:24px;
+		}
+
 		strong{
 			color: $teal;
 			font-weight: bold;
@@ -1280,14 +1315,17 @@ p{
 
 	.icon{
 		display: inline-block;
-		height: 200px;
+		height: 110px;
 		width: 100%;
+
+		@include breakpoint(tablet-screen) {
+			height: 200px;
+		}
 	}
 	.fact{
 		margin-bottom: 30px;
 		display: inline-block;
 		position: relative;
-		height:320px;
 		width: 100%;
 		@include breakpoint(tablet-screen){
 			height:220px;
@@ -1335,19 +1373,28 @@ p{
 	h3{
 		text-align: center;
 		color: $teal;
+		font-size:16px;
 		font-family: $sans;
 		font-weight: bold;
 		margin-top: 60px;
 		text-transform: uppercase;
+
+		@include breakpoint(tablet-screen) {
+			font-size:20px;
+		}
 	}
 	.divider{
 		display: inline-block;
 		background-color: $dark-grey;
 		width: 60px;
 		height: 3px;
-		margin:30px 0px 30px 0px;
+		margin:15px 0px;
 		position: relative;
 		@include horizontal-center;
+
+		@include breakpoint(tablet-screen) {
+			margin:30px 0px 30px 0px;
+		}
 	}
 	.testimonials-slider{
 		margin-bottom: 60px;
@@ -1400,9 +1447,14 @@ p{
 
 .main-section:last-of-type{
 	padding:60px 0px 60px 0px;
+
 	p{
-		font-size: 25px;
+		font-size:16px;
 		color: $dark-grey;
 		text-align: center;
+
+		@include breakpoint(tablet-screen) {
+			font-size: 25px;
+		}
 	}
 }

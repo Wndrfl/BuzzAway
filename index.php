@@ -151,6 +151,7 @@
 
 			<div class="product-variations">
 				<div class="container">
+					<div class="row">
 					<?php foreach ($product['variations'] as $variation): 
 						$size  = $variation['size'];
 						$price = $variation['price'];
@@ -176,6 +177,7 @@
 							</div>
 						</div>
 					<?php endforeach ?>
+					</div>
 				</div>
 			</div>
 		</div>

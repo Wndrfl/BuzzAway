@@ -1,9 +1,10 @@
 .modal-overlay{
 	position: absolute;
-	
 	background-color: rgba(0,0,0,.7);
 	display: block;
+	visibility:hidden;
 	opacity: 0;
+		z-index: 15;
 	@include transition(all .6s ease-in-out);
 
 	&.active{
@@ -12,7 +13,8 @@
 		height: 100%;
 		width: 100%;
 		opacity: 1;
-		z-index: 6;
+		visibility:visible;
+		z-index: 15;
 	}
 }
 
@@ -22,7 +24,8 @@
 	width: 80%;
 	@include center-center;
 	background-color: white;
-	z-index: -5;
+	z-index: 16;
+	visibility:hidden;
 	opacity: 0;
 	padding:30px;
 	border:5px solid $green;
@@ -32,7 +35,7 @@
 		padding:60px;
 	}
 	&.active{
-		z-index: 6;
+		visibility:visible;
 		opacity: 1;
 	}
 	h3{
@@ -89,8 +92,8 @@
 	.button{
 		margin-top:-30px;
 		opacity: 1;
-		font-size: 18px;
-		@include breakpoint(tablet-screen){
+		font-size: 14px;
+		@include breakpoint(desktop-screen){
 			margin-top: 30px;
 			font-size: 24px;
 		}
