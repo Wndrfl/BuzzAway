@@ -28,10 +28,7 @@
 						
 					</div>
 				</div>
-				
 			</div>
-
-			
 
 			<div class="hero-bottom-banner">
 				<div class="hero-ctas">

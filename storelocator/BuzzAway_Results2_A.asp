@@ -139,29 +139,9 @@
 		}
 	}
 
-	.header{
-		h3{
-			color:#00AA97;
-			font-size: 18px;
-		}
-		p{
-			color: #716967;
-			font-family: $sans;
-			font-weight: bold;
-			margin-top: 15px;
-		}
-		.divider{
-			
-		}
-	}
 	</style>
 
-	<div class="header">
-		<h3>Find the Store Nearest to You</h3>
-		<p>BUZZ AWAY EXTREME SPRAY AND TOWELETTES ARE AVAILABLE IN NATURAL GROCERY, HEALTH FOOD AND SUPPLEMENT STORES 
-	EVERYWHERE!</p>
-		<span class="divider"></span>
-	</div>
+
 	
 
 	<div class="search-table">
