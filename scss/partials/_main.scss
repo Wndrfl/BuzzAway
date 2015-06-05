@@ -1385,6 +1385,7 @@ p{
 	position: relative;
 	border-top:2px solid $dark-grey;
 	border-bottom:2px solid $dark-grey;
+	padding-bottom: 60px;
 	h3{
 		text-align: center;
 		color: $teal;
@@ -1412,7 +1413,6 @@ p{
 		}
 	}
 	.testimonials-slider{
-		margin-bottom: 60px;
 		width: 90%;
 		margin: 0 auto;
 		@include breakpoint(tablet-screen){
