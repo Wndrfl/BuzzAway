@@ -382,7 +382,7 @@ p{
 				width: 50%;
 				float: left;
 				display: inline-block;
-				font-size: 18px;
+				font-size: 14px;
 				@include border-radius(0px);
 
 				@include breakpoint(tablet-screen){
@@ -392,6 +392,7 @@ p{
 					opacity: 1;
 					font-size:14px;
 				}
+
 				@include breakpoint(desktop-screen){
 					font-size:16px;
 				}
@@ -474,7 +475,7 @@ p{
 		display: inline-block;
 		margin-left: -5%;
 		margin-right: -5%;
-		margin-top:190px;
+		margin-top:200px;
 		width: 110%;
 		@include breakpoint(tablet-screen){
 			margin-top:0;
@@ -1350,12 +1351,19 @@ p{
 	}
 	.testimonials-slider{
 		margin-bottom: 60px;
+		width: 90%;
+		margin: 0 auto;
+		@include breakpoint(tablet-screen){
+			width: 100%;	
+		}
 	}
 	.testimonial{
 		.quote{
-			font-size: 30px;
+			font-size: 21px;
 			text-align: center;
-
+			@include breakpoint(tablet-screen){
+				font-size: 30px;
+			}
 		}
 		.name{
 			text-align: center;
@@ -1376,10 +1384,17 @@ p{
 		}
 	}
 	.slick-prev{
-		left:-30px;
+		left:-20px;
+		@include breakpoint(tablet-screen){
+			left:-30px;
+		}
+		
 	}
 	.slick-next{
-		right:-30px;
+		right:-20px;
+		@include breakpoint(tablet-screen){
+			right:-30px;
+		}
 	}
 }
 

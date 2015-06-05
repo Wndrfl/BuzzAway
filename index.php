@@ -35,8 +35,8 @@
 
 			<div class="hero-bottom-banner">
 				<div class="hero-ctas">
-					<a href="" class="button teal-button shop-now">Shop Now</a>
-					<a href="" class="button green-button find-a-store">Find a Store</a>
+					<a href="#" class="button teal-button shop-now">Shop Now</a>
+					<a href="#" class="button green-button find-a-store">Find a Store</a>
 				</div>
 
 				<div class="hero-prod-details">
@@ -79,7 +79,7 @@
 
 <section class="main-section main-section-product">
 	<div class="container">
-		<div class="product-desc">
+		<div class="product-desc" id="about">
 
 			<span class="corner cut left"></span>
 			<span class="corner blue left"></span>

@@ -105,8 +105,10 @@
 
 #find-a-store-modal{
 	height:80%;
+
 	@include breakpoint(desktop-screen){
 		height:60%;
+		min-height:600px;
 	}
 	iframe{
 		border:none;

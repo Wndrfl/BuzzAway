@@ -9,7 +9,7 @@ $(function(){
 	  var sticky = $('.main-header'),
 	      scroll = $(window).scrollTop();
 
-	  if (scroll >= 100){
+	  if (scroll >= 150){
 	  	// sticky.animate({
 	  	// 	position: fixed
 	  	// }, 1000);

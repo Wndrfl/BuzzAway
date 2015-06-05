@@ -24,7 +24,7 @@
 			</div>
 			
 			<div class="main-header-right">
-				<a href="#" class="button grey-button">About</a>
+				<a href="#about" class="button grey-button">About</a>
 				<a href="#" class="button teal-button shop-now">Shop Now</a>
 				<a href="#" class="button green-button find-a-store">Find A Store</a>
 			</div>

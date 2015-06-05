@@ -382,7 +382,7 @@ p {
         width: 50%;
         float: left;
         display: inline-block;
-        font-size: 18px;
+        font-size: 14px;
         -webkit-border-radius: 0px;
         -moz-border-radius: 0px;
         -ms-border-radius: 0px;
@@ -465,7 +465,7 @@ p {
     display: inline-block;
     margin-left: -5%;
     margin-right: -5%;
-    margin-top: 190px;
+    margin-top: 200px;
     width: 110%; }
     @media (min-width: 768px) {
       .main-section-hero .hero-prod-detail-wrapper {
@@ -1332,10 +1332,18 @@ p {
     -o-transform: translateX(-50%);
     transform: translateX(-50%); }
   .testimonials-section .testimonials-slider {
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    width: 90%;
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      .testimonials-section .testimonials-slider {
+        width: 100%; } }
   .testimonials-section .testimonial .quote {
-    font-size: 30px;
+    font-size: 21px;
     text-align: center; }
+    @media (min-width: 768px) {
+      .testimonials-section .testimonial .quote {
+        font-size: 30px; } }
   .testimonials-section .testimonial .name {
     text-align: center; }
     .testimonials-section .testimonial .name p, .testimonials-section .testimonial .name span {
@@ -1360,9 +1368,15 @@ p {
     .testimonials-section .slick-prev:hover, .testimonials-section .slick-next:hover {
       opacity: 1; }
   .testimonials-section .slick-prev {
-    left: -30px; }
+    left: -20px; }
+    @media (min-width: 768px) {
+      .testimonials-section .slick-prev {
+        left: -30px; } }
   .testimonials-section .slick-next {
-    right: -30px; }
+    right: -20px; }
+    @media (min-width: 768px) {
+      .testimonials-section .slick-next {
+        right: -30px; } }
 
 .main-section:last-of-type {
   padding: 60px 0px 60px 0px; }
@@ -1479,7 +1493,8 @@ p {
   height: 80%; }
   @media (min-width: 992px) {
     #find-a-store-modal {
-      height: 60%; } }
+      height: 60%;
+      min-height: 600px; } }
   #find-a-store-modal iframe {
     border: none;
     position: relative;
