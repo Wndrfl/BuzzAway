@@ -35,7 +35,7 @@ $products = array(
 				'link' => 'http://www.wholefoods.com'
 			),
 			array(
-				'logo' => '/img/vitaminshoppe',
+				'logo' => '/img/vitaminshoppe.png',
 				'link' => 'http://www.vitaminshoppe.com'
 			)
 		),

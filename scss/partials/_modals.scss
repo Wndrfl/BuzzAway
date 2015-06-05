@@ -24,18 +24,29 @@
 	background-color: white;
 	z-index: -5;
 	opacity: 0;
-	padding:60px;
+	padding:30px;
 	border:5px solid $green;
 	text-align: center;
 	@include transition(opacity .4s ease-in-out);
-
+	@include breakpoint(tablet-screen){
+		padding:60px;
+	}
 	&.active{
 		z-index: 6;
 		opacity: 1;
 	}
 	h3{
 		color:$teal;
-		font-size: 25px;
+		font-size: 18px;
+		@include breakpoint(tablet-screen){
+			font-size: 25px;
+		}
+		br{
+			display: none;
+			@include breakpoint(tablet-screen){
+				display: block;
+			}
+		}
 	}
 	.divider{
 		display:block;
@@ -43,26 +54,47 @@
 		height:5px;
 		width: 60px;
 		margin:0 auto;
-		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		@include breakpoint(tablet-screen){
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
 	}
 
 	.retailer{
+		margin-top:15px;
+		margin-bottom:15px;
 		.retailer-logo-container{
 			border:1px solid black;
 			width: 100%;
-			padding:30px;
+			padding:0px;
+			padding-top:30px;
+			padding-bottom: 30px;
+			@include breakpoint(tablet-screen){
+				padding:30px;
+			}
 		}
 		.retailer-logo{
 			display: inline-block;
 			height: 60px;
-			width: 100%;
+			width: 80%;
 			background-position: center center;
+			@include breakpoint(tablet-screen){
+				width: 100%;
+			}
 		}
 	}
 
 	.button{
-		margin-top: 30px;
+		margin-top:-30px;
+		opacity: 1;
+		font-size: 18px;
+		@include breakpoint(tablet-screen){
+			margin-top: 30px;
+			font-size: 24px;
+		}
+		
 	}
 	
 }
@@ -72,10 +104,17 @@
 }
 
 #find-a-store-modal{
-	
-	.find-a-store-right,
-	.find-a-store-left{
-		border:1px solid $grey;
+	height:80%;
+	@include breakpoint(desktop-screen){
+		height:60%;
+	}
+	iframe{
+		border:none;
+		position: relative;
+		left: 0; right:0;
+		bottom:0; left:0;
+		height:100%;
+		width: 100%;
 	}
 	
 }

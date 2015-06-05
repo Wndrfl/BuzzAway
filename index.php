@@ -197,7 +197,7 @@
 		<div class="col-xs-12 col-sm-6">
 			<div class="fact">
 				<div class="col-xs-12 col-sm-4">
-					<span class="data-icon icon" style="background-image:url(/img/data-icon-1);"></span>
+					<span class="data-icon icon" style="background-image:url(/img/data-icon-1.png);"></span>
 				</div>
 				
 				<div class="col-xs-12 col-sm-8">
@@ -208,7 +208,7 @@
 
 		<div class="col-xs-12 col-sm-6">
 			<div class="fact">
-				<div class="col-xs-12 col-sm-4"><span class="data-icon icon col-xs-3" style="background-image:url(/img/data-icon-2);"></span></div>
+				<div class="col-xs-12 col-sm-4"><span class="data-icon icon col-xs-3" style="background-image:url(/img/data-icon-2.png);"></span></div>
 				<div class="col-xs-12 col-sm-8"><p class="fact-text">Is as effective as 7% to 20% DEET-based products.</p></div>
 			</div>
 		</div>

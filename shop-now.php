@@ -27,7 +27,7 @@
 			$logo = $retailer['logo'];
 			$link = $retailer['link']; ?>
 			
-			<div class="col-sm-4">
+			<div class="col-xs-12 col-sm-4">
 				<div class="retailer">
 
 					<div class="retailer-logo-container">

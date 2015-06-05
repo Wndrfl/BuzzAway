@@ -229,11 +229,12 @@ p{
 			width: 65%;
 		}
 		@include breakpoint(desktop-screen){
-			/*top:100px;*/
+			
 			width: 53%;
 		}
 		@include breakpoint(large-desktop-screen){
 			width: 60%;
+			top:100px;
 		}
 
 		h1{
@@ -343,7 +344,7 @@ p{
 		margin-left: -15px;
 		margin-right: -15px;
 		position: relative;
-		top: 300px;
+		top: 235px;
 
 		@include breakpoint(tablet-screen){
 			position: absolute;
@@ -463,10 +464,10 @@ p{
 		background-color: $beige;
 		position: relative;
 		display: inline-block;
-		margin-left: -3%;
-		margin-right: -3%;
-		margin-top:300px;
-		width: 106%;
+		margin-left: -5%;
+		margin-right: -5%;
+		margin-top:190px;
+		width: 110%;
 		@include breakpoint(tablet-screen){
 			margin-top:0;
 			margin-left: 0;
