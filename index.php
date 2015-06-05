@@ -73,10 +73,10 @@
 		
 	</div>
 </section>
-
+<div id="about"></div>
 <section class="main-section main-section-product">
 	<div class="container">
-		<div class="product-desc" id="about">
+		<div class="product-desc">
 
 			<span class="corner cut left"></span>
 			<span class="corner blue left"></span>
@@ -216,7 +216,7 @@
 				<div class="col-xs-12 col-sm-8"><p class="fact-text">Is as effective as 7% to 20% DEET-based products.</p></div>
 			</div>
 		</div>
-		<div class="data-cta"><a href="" class="button green-button find-a-store">Find A Store</a></div>
+		<div class="data-cta"><a href="#" class="button green-button find-a-store">Find A Store</a></div>
 	</div>
 </section>
 
