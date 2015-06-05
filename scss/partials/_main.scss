@@ -1068,7 +1068,7 @@ p{
 			background-color: white;
 			@include border-radius(10px);
 			font-family: $sans;
-			height:295px;
+			height:330px;
 			margin-top:15px;
 			margin-bottom:15px;
 
@@ -1320,6 +1320,10 @@ p{
 		
 		h3{
 			font-family: $sans;
+			font-size: 18px;
+			@include breakpoint(tablet-screen){
+				font-size: 25px;
+			}
 		}
 	}
 
@@ -1366,6 +1370,7 @@ p{
 	.button{
 		width: 100%;
 		text-align: center;
+		z-index: 3;
 		@include breakpoint(tablet-screen){
 			width: initial;
 			position: absolute;

@@ -1020,7 +1020,7 @@ p {
       -o-border-radius: 10px;
       border-radius: 10px;
       font-family: "Open Sans", sans-serif;
-      height: 295px;
+      height: 330px;
       margin-top: 15px;
       margin-bottom: 15px; }
       @media (min-width: 768px) {
@@ -1268,7 +1268,11 @@ p {
     border-bottom-left-radius: 15px;
     color: white; }
     .data-section .title-container h3 {
-      font-family: "Open Sans", sans-serif; }
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px; }
+      @media (min-width: 768px) {
+        .data-section .title-container h3 {
+          font-size: 25px; } }
   .data-section .icon {
     display: inline-block;
     height: 110px;
@@ -1302,7 +1306,8 @@ p {
     margin: 0 auto; }
   .data-section .button {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    z-index: 3; }
     @media (min-width: 768px) {
       .data-section .button {
         width: initial;
@@ -1561,4 +1566,5 @@ p {
     bottom: 0;
     top: 0px;
     height: 75%;
-    width: 100%; }
+    width: 100%;
+    overflow: auto; }
